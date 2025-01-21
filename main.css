@@ -19,57 +19,69 @@ body {
   font-family: sans-serif;
 }
 
-section {
+.section {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 15rem;
-  background-color: #fff;
+  /* height: 100vh; */
 }
 
-& .header-container {
-  background-color: #3F3D56;
-  color: #fff;
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem;
-  align-items: center;
-  width: 100%;
-  font-family: "Inter";
-  & .logo {
+img {
+  width: 49rem;
+  height: 35rem;
+}
 
-    & h1 {
-      font-size: 3rem;
-      
-      & sup {
-        position: relative;
-        top: 3px;
-        right: 6px;
-        font-size: 3.5rem;
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  & .header-container {
+    background-color: #3F3D56;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    align-items: center;
+    width: 100%;
+    font-family: "Inter";
+    & .logo {
+
+      & h1 {
+        font-size: 3rem;
+        
+        & sup {
+          position: relative;
+          top: 3px;
+          right: 6px;
+          font-size: 3.5rem;
+        }
       }
     }
-  }
 
-  & nav {
-    font-size: 1.44rem;
-    & ul {
-      display: flex;
-      gap: 1.6rem;
+    & nav {
+      font-size: 1.44rem;
+      & ul {
+        display: flex;
+        gap: 1.6rem;
 
-      & li {
-        list-style: none;
-        
-        & a {
-          text-decoration: none;
-          font-size: 1.55rem;
-          text-transform: uppercase;
-          font-weight: 700;
-          color: inherit;
-          padding-bottom: .3rem;
-          border-bottom: solid 3px transparent;
-          transition: all .3s ease-in;
+        & li {
+          list-style: none;
+          
+          & a {
+            text-decoration: none;
+            font-size: 1.55rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: inherit;
+            padding-bottom: .3rem;
+            border-bottom: solid 3px transparent;
+            transition: all .3s ease-in;
 
-          &:hover {
-            border-bottom-color: #fff;
+            &:hover {
+              border-bottom-color: #fff;
+            }
           }
         }
       }
@@ -77,25 +89,42 @@ section {
   }
 }
 
-.home {
-  .home-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 4rem;
-  
-    & .home-headline {
-      color: #3F3D56;
-      width: 45rem;
-      min-width: 100%;
-      font-size: 3rem;
-      align-self: center;
-      text-align: start;
-      line-height: 1.4;
-    }
+
+
+.home-container {
+  display: flex;
+  gap: 15rem;
+
+  & .home-headline {
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+    color: #3F3D56;
+    width: 55rem;
+    max-width: 100%;
+    font-size: 3rem;
+    align-self: center;
+    text-align: start;
+    line-height: 1.2;
   }
 }
 
+
 .about {
-  background-color: #6b63ffa4;
+  background-color: #A09BFF;
   color: #fff;
+
+  & .about-container {
+    display: flex;
+    align-items: center;
+    gap: 15rem;
+
+    & .about-headline {
+      display: flex;
+      gap: 2.5rem;
+      flex-direction: column;
+      font-size: 3rem;
+      width: 55rem;
+    }
+  }
 }
