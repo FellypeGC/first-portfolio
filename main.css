@@ -1,3 +1,9 @@
+/* 
+colors: 
+  roxo- 6c63ff;
+        3F3D56
+*/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,4 +12,90 @@
 
 html {
   font-size: 62.5%;
+  line-height: 1.2;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  padding: 15rem;
+  background-color: #fff;
+}
+
+& .header-container {
+  background-color: #3F3D56;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  align-items: center;
+  width: 100%;
+  font-family: "Inter";
+  & .logo {
+
+    & h1 {
+      font-size: 3rem;
+      
+      & sup {
+        position: relative;
+        top: 3px;
+        right: 6px;
+        font-size: 3.5rem;
+      }
+    }
+  }
+
+  & nav {
+    font-size: 1.44rem;
+    & ul {
+      display: flex;
+      gap: 1.6rem;
+
+      & li {
+        list-style: none;
+        
+        & a {
+          text-decoration: none;
+          font-size: 1.55rem;
+          text-transform: uppercase;
+          font-weight: 700;
+          color: inherit;
+          padding-bottom: .3rem;
+          border-bottom: solid 3px transparent;
+          transition: all .3s ease-in;
+
+          &:hover {
+            border-bottom-color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.home {
+  .home-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  
+    & .home-headline {
+      color: #3F3D56;
+      width: 45rem;
+      min-width: 100%;
+      font-size: 3rem;
+      align-self: center;
+      text-align: start;
+      line-height: 1.4;
+    }
+  }
+}
+
+.about {
+  background-color: #6b63ffa4;
+  color: #fff;
 }
