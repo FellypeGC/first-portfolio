@@ -46,8 +46,8 @@ header {
     align-items: center;
     width: 100%;
     font-family: "Inter";
+    
     & .logo {
-
       & h1 {
         font-size: 3rem;
         
@@ -94,6 +94,7 @@ header {
 .home-container {
   display: flex;
   gap: 15rem;
+  height: 60rem;
 
   & .home-headline {
     display: flex;
@@ -106,6 +107,11 @@ header {
     align-self: center;
     text-align: start;
     line-height: 1.2;
+  }
+
+  & .home-images {
+    align-items: center;
+    display: flex;
   }
 }
 
@@ -125,6 +131,53 @@ header {
       flex-direction: column;
       font-size: 3rem;
       width: 55rem;
+    }
+  }
+}
+
+.skills {
+  & .skills-container {
+    display: flex;
+    flex-direction: column;
+    width: 123.2rem;
+    gap: 4rem;
+
+    & .skills-headline {
+      font-size: 3rem;
+      color: #3F3D56;
+    }
+  
+    & .skills-tech-container {
+      display: flex;
+      width: 123.2rem;
+      padding: 4rem;
+      border-radius: 8px;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    
+      & .skills-technologies-logos {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+        justify-content: center;
+
+        & .tech-logos {
+          width: 35rem;
+          height: 25rem;
+        } 
+
+        & .css {
+          width: 25rem;
+        }
+
+        & .git {
+          width: 31rem;
+        }
+
+        & .reactjs {
+          width: 40rem;
+        }
+      }
     }
   }
 }
