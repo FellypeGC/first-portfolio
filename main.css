@@ -124,6 +124,14 @@ header {
     align-self: center;
     text-align: start;
     line-height: 1.2;
+
+    & .language-select-container {
+
+      & select {
+        padding: 1rem 2rem;
+        
+      }
+    }
   }
 
   & .home-images {
