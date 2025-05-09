@@ -341,3 +341,14 @@ header {
     }
   }
 }
+
+footer {
+  & p {
+    background-color: #3F3D56;
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 1.6rem;
+    font-weight: 700;
+  }
+}
