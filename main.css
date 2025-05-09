@@ -34,13 +34,15 @@ body {
 .home-headline,
 .about-headline,
 .skills-headline, 
-.projects-headline {
+.projects-headline,
+.contacts-headline {
   font-size: 3rem;
 }
 
 .home-headline,
 .skills-headline, 
-.projects-headline {
+.projects-headline,
+.contacts-headline {
   color: #3F3D56;
 }
 
@@ -154,6 +156,12 @@ header {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+
+    & .skills-headline {
+      & h1 {
+        padding-bottom: 2.5rem;
+      }
+    }
   
     & .skills-tech-container {
       display: flex;
@@ -209,6 +217,23 @@ header {
   padding: 10rem 15rem;
   & .projects-container {
     height: 100%;
+
+    & .projects-headline {
+      & h1 {
+        & a {
+          color: #3F3D56;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        & .bi-box-arrow-up-right {
+          font-size: 22px;
+          margin-top: 15px;
+        }
+      }
+    }
 
     & .project-box {
       display: flex;
@@ -272,5 +297,47 @@ header {
         }
       }
     } 
+  }
+}
+
+.contact {
+  & .contact-container {
+    display: flex;
+    flex-direction: column;
+
+    & .contacts-headline {
+      & h1 {
+        padding-bottom: 2.5rem;
+      }
+    }
+
+    & .contact-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      height: 60vh;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+
+      & .contact-forms {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        list-style: none;
+
+        & .contact {
+          font-size: 3.2rem;
+
+          & a {
+            text-decoration: none;
+            color: #000;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
   }
 }
