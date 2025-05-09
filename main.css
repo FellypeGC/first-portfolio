@@ -192,6 +192,9 @@ header {
           width: 40rem;
         }
 
+        & .bootstrap {
+          width: 25rem;
+        }
       }
     }
   }
