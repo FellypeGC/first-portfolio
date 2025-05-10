@@ -195,7 +195,6 @@ header {
 
         & .css {
           width: 20rem;
-
         }
 
         & .js {
@@ -226,23 +225,21 @@ header {
   & .projects-container {
     height: 100%;
 
-    & .projects-headline {
-      & h1 {
-        & a {
-          color: #3F3D56;
-          text-decoration: none;
+    & h1 {
+      & a {
+        color: #3F3D56;
+        text-decoration: none;
 
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-        & .bi-box-arrow-up-right {
-          font-size: 22px;
-          margin-top: 15px;
+        &:hover {
+          text-decoration: underline;
         }
       }
+      & .bi-box-arrow-up-right {
+        font-size: 22px;
+        margin-top: 15px;
+      }
     }
-
+    
     & .project-box {
       display: flex;
       align-items: flex-start;
@@ -358,5 +355,226 @@ footer {
     text-align: center;
     padding: 1.6rem;
     font-weight: 700;
+  }
+}
+
+
+/* @media (min-width: 481px) and (max-width: 767px) {
+
+} */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .section {
+    padding: 2.5rem 5rem;
+  }
+  
+  .home {
+    height: 100vh;
+    & .home-container {
+      gap: 4rem;
+    }
+  }
+
+  .about {
+    & .about-container {
+      gap: 4rem;
+    }
+  }
+
+  .projects {
+    & .projects-container {
+      height: 100%;
+      width: 100%;
+
+      & .project-box {
+        & .project-detail {
+          width: 65rem;
+          gap: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .programming-image, 
+  .image-coding {
+    max-width: 55rem;
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1023px) {
+  .section {
+    padding: 5rem;
+
+  }
+  & .home-container {
+    gap: 4rem;
+    height: 100vh;
+
+    & .home-headline {
+      width: 39rem;
+    }
+  }
+
+  & .about-container {
+    gap: 5rem;
+  
+    & .about-headline {
+      gap: 2.5rem;
+      width: 50rem;
+    }
+
+    & .programming-image, 
+    .image-coding {
+      max-width: 100%;
+    }
+  } 
+    
+  & .skills {
+    & .skills-container {
+      & .skills-tech-container {
+        & .skills-technologies-logos {
+          gap: 2rem;
+          
+          & .html {
+            width: 25rem;
+          }
+
+          & .css {
+            width: 20rem;
+          }
+
+          & .js {
+            width: 30rem;
+            height: 26.5rem;
+            margin-top: -1.05rem
+          }
+
+          & .git {
+            width: 31rem;
+            height: 30rem;
+          }
+
+          & .reactjs {
+            width: 40rem;
+          }
+
+          & .sass {
+            width: 25rem;
+            height: 20rem;
+          } 
+
+          & .bootstrap {
+            width: 24rem;
+            height: 22rem;
+          }
+
+          & .tailwind {
+            width: 25rem;
+            height: 20rem;
+          }
+        }
+      }
+    }
+  }
+  
+  .projects {
+    & .projects-container {
+      & .project-box {
+        & .project-detail {
+            width: 65rem;
+        }
+      }
+    }
+  }
+    
+} 
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .section {
+    padding: 15rem 5rem;
+  }
+
+  .home-container {
+    gap: 4rem;
+    & .home-headline {
+      width: 55rem;
+    }
+  
+    & .programming-image {
+      width: 35rem;
+    }
+
+  }
+
+  .about {
+    & .about-container {
+      & .about-headline {
+        width: 75rem;
+      }
+    }
+
+    & .image-coding {
+      width: 100%;
+    }
+  }
+
+  .skills {
+    padding-bottom: 10rem;
+  }
+
+  .projects {
+    padding: 10rem;
+  }
+
+  .projects {
+    & .projects-container {
+      & .projects-headline {
+          & h1 {
+            & a {
+              color: #3F3D56;
+              text-decoration: none;
+              padding: 0 2rem;
+            }
+          }
+      }
+    }
+  }
+
+  .projects {
+    & .projects-container {
+      & .projects-headline {
+        & h1 {
+          & a {
+            color: #3F3D56;
+            text-decoration: none;
+            padding-left: 2.5rem;
+          }
+        }
+      }
+
+      & .project-box {
+        & .project-image-box {
+          & .project-image {
+            width: 100%;
+            height: 100%;
+            margin-left: 2.5rem;
+          }
+        }
+        
+        & .project-detail {
+          padding: 0rem 2rem;
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .programming-image, 
+  .image-coding {
+    max-width: 100%;
   }
 }

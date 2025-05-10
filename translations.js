@@ -34,7 +34,7 @@ const translations = {
     aboutP1: "Atualmente atuando no desenvolvimento de aplicações Front-End, com planos de me tornar Full-Stack e seguir uma carreira internacional, criando softwares de alto desempenho e eficiência para cada plataforma.",
     aboutP2: "Tenho grande interesse em expandir meus conhecimentos e atuar em diversas tecnologias, incluindo Desktop, Front-End, Back-End, Dispositivos Móveis e até Jogos, buscando solucionar problemas complexos e aprimorar continuamente minhas habilidades.",
     aboutP3: "Além disso, estou cursando Análise e Desenvolvimento de Sistemas.",
-    skillsP: "Tecnologias que eu sei e já usei",
+    skillsP: "Tecnologias que eu tenho conhecimento e já usei",
     description1: "",
     description2: "",
     description3: "",
