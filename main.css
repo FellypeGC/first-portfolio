@@ -49,6 +49,7 @@ body {
 img {
   width: 49rem;
   height: 35rem;
+  max-width: 100%;
 }
 
 header {
@@ -359,9 +360,112 @@ footer {
 }
 
 
-/* @media (min-width: 481px) and (max-width: 767px) {
+/* @media (max-width: 640px) {} */
 
-} */
+@media (min-width: 641px) and (max-width: 767px) {
+
+  header {
+    & .header-container {
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+  }
+  .section {
+    padding: 2rem;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 4rem;
+    height: 100%;
+  }
+
+  .home {
+    margin-top: 6rem;
+    & .home-container {
+      & .home-headline {
+        width: 100%;
+      }
+      & .home-images {
+        justify-content: center;
+      }
+    }
+  } 
+    
+    
+
+  .about {
+    & .about-container {
+      gap: 4rem;
+      & .about-headline {
+        width: 100%;
+      }
+    }
+  }
+  & .skills {
+    & .skills-container {
+      & .skills-tech-container {
+        & .skills-technologies-logos {
+          gap: 2rem;
+
+          & .js {
+            width: 25rem;
+            height: 20rem;
+            margin-top: -1.05rem
+          }
+
+          & .git {
+            width: 20rem;
+            height: 20rem;
+          }
+
+          & .reactjs {
+            width: 23rem;
+            height: 15rem;
+          }
+
+          & .sass {
+            width: 24rem;
+            height: 17rem;
+          } 
+
+          & .bootstrap {
+            width: 20rem;
+            height: 20rem;
+          }
+
+          & .tailwind {
+            width: 25rem;
+            height: 20rem;
+          }
+        }
+      }
+    }
+  }
+
+  .projects {
+    & .projects-container {
+      & .project-box {
+        & .project-detail {
+          width: 100%;
+          gap: .2rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 929px) {
+  .contact {
+    & .contact-container {
+      & .contact-box {
+        flex-direction: column;
+        height: 100%;
+        padding: 2.5rem;
+      }
+    }
+  }      
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
   .section {
