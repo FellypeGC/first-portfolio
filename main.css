@@ -368,7 +368,7 @@ footer {
       & nav {
         position: relative;
         & ul {
-          opacity: 0;
+          display: none;
           flex-direction: column;
           position: absolute;
           background-color: #3F3D56;
@@ -379,7 +379,7 @@ footer {
         }
 
         & .active {
-          opacity: 1;
+          display: flex;
           transition: opacity 0.3s ease;
         }
 
