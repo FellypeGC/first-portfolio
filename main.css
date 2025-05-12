@@ -85,6 +85,7 @@ header {
       & ul {
         display: flex;
         gap: 1.6rem;
+        transition: opacity 0.3s ease, transform 0.3s ease;
 
         & li {
           list-style: none;
@@ -112,8 +113,6 @@ header {
   }
 }
 
-
-
 .home-container {
   display: flex;
   gap: 15rem;
@@ -130,10 +129,8 @@ header {
     line-height: 1.2;
 
     & .language-select-container {
-
       & select {
         padding: 1rem 2rem;
-        
       }
     }
   }
@@ -143,7 +140,6 @@ header {
     display: flex;
   }
 }
-
 
 .about {
   background-color: #A09BFF;
@@ -384,6 +380,7 @@ footer {
 
         & .active {
           display: flex;
+          transition: opacity 0.3s ease, transform 0.3s ease;
         }
 
         & .bi-list {
