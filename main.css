@@ -105,6 +105,9 @@ header {
           }
         }
       }
+      & .bi-list {
+        display: none;
+      }
     }
   }
 }
@@ -360,16 +363,165 @@ footer {
 }
 
 
-/* @media (max-width: 640px) {} */
+@media (max-width: 640px) {
+  header {
+    & .header-container {
+      justify-content: space-between;
+      padding: 1rem 2.5rem;
+
+      & nav {
+        position: relative;
+        & ul {
+          display: none; 
+          flex-direction: column;
+          position: absolute;
+          background-color: #3F3D56;
+          padding: 2rem;
+          top: 5rem;
+          right: 0;
+          transition: all .3s ease-in-out;
+        }
+
+        & .active {
+          display: flex;
+        }
+
+        & .bi-list {
+          display: flex;
+          font-size: 3rem;
+          transition: all .3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .section {
+    padding: 2rem;
+  }
+
+  .home {
+    margin-top: 6rem;
+
+    & .home-headline {
+      width: 100%;
+    }
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 5rem;
+    height: 100%;
+    width: 100%;
+  }
+
+  .about {
+    & .about-container {
+      gap: 4rem;
+
+      & .about-headline {
+        width: 100%;
+      }
+
+      & .about-images {
+        width: 100%;
+
+        & .image-connected-wrld {
+          & .image-coding {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  & .skills {
+    & .skills-container {
+      & .skills-tech-container {
+        & .skills-technologies-logos {
+          gap: 4rem;
+
+          & .html {
+            width: 15rem;
+            height: 15rem;
+          }
+
+          & .css {
+            width: 12rem;
+            height: 15rem;
+          }
+
+          & .js {
+            width: 17rem;
+            height: 17rem;
+          }
+
+          & .reactjs {
+            width: 15rem;
+            height: 15rem;
+          }
+
+          & .git {
+            width: 20rem;
+            height: 20rem;
+          }
+
+          & .reactjs {
+            width: 23rem;
+            height: 15rem;
+          }
+
+          & .sass {
+            width: 18rem;
+            height: 16rem;
+          } 
+
+          & .bootstrap {
+            width: 15rem;
+            height: 15rem;
+          }
+
+          & .tailwind {
+            width: 20rem;
+            height: 15rem;
+          }
+        }
+      }
+    }
+  }
+
+  .projects {
+    flex-direction: column;
+    padding: 2rem;
+
+    & .projects-container {
+      width: 100%;
+
+      & .project-box {
+        flex-direction: column; 
+
+        & .project-image-box {
+          width: 100%;
+        }
+
+        & .project-detail {
+          width: 100%;
+          height: 100%;
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}
 
 @media (min-width: 641px) and (max-width: 767px) {
 
   header {
     & .header-container {
-        justify-content: space-between;
-        padding: 1rem 2rem;
+      justify-content: space-between;
+      padding: 1rem 2rem;
     }
   }
+
   .section {
     padding: 2rem;
   }
@@ -392,8 +544,6 @@ footer {
     }
   } 
     
-    
-
   .about {
     & .about-container {
       gap: 4rem;
@@ -402,6 +552,7 @@ footer {
       }
     }
   }
+
   & .skills {
     & .skills-container {
       & .skills-tech-container {
@@ -453,6 +604,12 @@ footer {
       }
     }
   }
+
+  .contact {
+    & .contact-container {
+      gap: 2rem;
+    }
+  }
 }
 
 @media (max-width: 929px) {
@@ -462,6 +619,7 @@ footer {
         flex-direction: column;
         height: 100%;
         padding: 2.5rem;
+        gap: 2rem;
       }
     }
   }      
