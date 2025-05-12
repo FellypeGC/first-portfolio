@@ -376,6 +376,8 @@ footer {
           top: 100%;
           right: 0;
           transition: opacity 0.3s ease;
+          border-bottom-left-radius: 8px;
+          border-bottom-right-radius: 8px;
         }
 
         & .active {
@@ -498,6 +500,7 @@ footer {
 
         & .project-image-box {
           width: 100%;
+          height: 100%;
         }
 
         & .project-detail {
@@ -506,6 +509,24 @@ footer {
           gap: 1rem;
         }
       }
+    }
+  }
+
+  .contact {
+    & .contact-container {
+        & .contact-box {
+          & .contact-forms {
+            width: 100%;
+
+            & .contact {
+              & a {
+                width: 100%;
+                display: block;
+                font-size: 2rem;
+              }
+            }
+          }
+        }
     }
   }
 }
