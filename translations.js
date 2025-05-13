@@ -15,9 +15,9 @@ const translations = {
     aboutP2: "Highly interested in expanding my knowledge and working across a range of technologies including Desktop, Front-End, Back-End, Mobile and even Games, to solve complex problems continuously improving my skills.",
     aboutP3: "I'm also enrolled in a Technical Program in Systems Analysis and Development.",
     skillsP: "Technologies that I know and have also used",
-    description1: "",
-    description2: "",
-    description3: "",
+    description1: "Developed using HTML, CSS, and JavaScript. Includes sections for selecting location, date, time, and personal information. Designed to offer a seamless and user-friendly experience for booking online and in-person classes, with features like promotions and easy navigation.",
+    description2: "Responsive landing page for the Overmatch English course (Now, it's Phenom Idiomas), using HTML, CSS, and JavaScript. Includes sections such as registration form, testimonials, and location. Designed to promote private online and in-person classes in an accessible and modern way.",
+    description3: "Landing page developed for the fictional pizzeria PizzaHash, using HTML, CSS, and JavaScript. The site features sections such as menu, promotions, and reviews. Designed to simulate a real gastronomic e-commerce experience.",
   },
   ptBr: {
     aboutLink: "Sobre",
@@ -35,9 +35,9 @@ const translations = {
     aboutP2: "Tenho grande interesse em expandir meus conhecimentos e atuar em diversas tecnologias, incluindo Desktop, Front-End, Back-End, Dispositivos Móveis e até Jogos, buscando solucionar problemas complexos e aprimorar continuamente minhas habilidades.",
     aboutP3: "Além disso, estou cursando Análise e Desenvolvimento de Sistemas.",
     skillsP: "Tecnologias que eu tenho conhecimento e já usei",
-    description1: "",
-    description2: "",
-    description3: "",
+    description1: "Desenvolvida com HTML, CSS e JavaScript. Inclui seções para selecionar local, data, horário e informações pessoais. Projetada para oferecer uma experiência fluida e intuitiva ao agendar aulas online e presenciais, com recursos como promoções e navegação fácil.",
+    description2: "Landing page responsiva para o curso de inglês Overmatch (Agora, Phenom Idiomas), utilizando HTML, CSS e JavaScript. Inclui seções como formulário de inscrição, depoimentos e localização. Projetada para promover aulas particulares online e presenciais de forma acessível e moderna.",
+    description3: "Landing page desenvolvida para a pizzaria fictícia PizzaHash, utilizando HTML, CSS e JavaScript. O site apresenta seções como menu, promoções e avaliações. Projetado para simular uma experiência real de e-commerce gastronômico.",
   }
 }
 
@@ -56,6 +56,9 @@ const aboutP1 = document.querySelector(".about-p1");
 const aboutP2 = document.querySelector(".about-p2");
 const aboutP3 = document.querySelector(".about-p3");
 const skillsP = document.querySelector(".skills-p");
+const description1 = document.querySelector(".description1");
+const description2 = document.querySelector(".description2");
+const description3 = document.querySelector(".description3");
 const languageSelector = document.querySelector("select");
 
 languageSelector.addEventListener("change", (event) => {
@@ -79,6 +82,9 @@ const setLanguage = (language) => {
     aboutP2.innerText = translations.en.aboutP2;
     aboutP3.innerText = translations.en.aboutP3;
     skillsP.innerText = translations.en.skillsP;
+    description1.innerText = translations.en.description1;
+    description2.innerText = translations.en.description2;
+    description3.innerText = translations.en.description3;
   } else if (language == "pt-br") {
     aboutLink.innerText = translations.ptBr.aboutLink;
     skillsLink.innerText = translations.ptBr.skillsLink;
@@ -95,5 +101,8 @@ const setLanguage = (language) => {
     aboutP2.innerText = translations.ptBr.aboutP2;
     aboutP3.innerText = translations.ptBr.aboutP3;
     skillsP.innerText = translations.ptBr.skillsP;
+    description1.innerText = translations.ptBr.description1;
+    description2.innerText = translations.ptBr.description2;
+    description3.innerText = translations.ptBr.description3;
   }
 }
