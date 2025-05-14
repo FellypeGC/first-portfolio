@@ -229,14 +229,17 @@ header {
       & a {
         color: #3F3D56;
         text-decoration: none;
+        position: relative;
 
         &:hover {
           text-decoration: underline;
         }
-      }
-      & .bi-box-arrow-up-right {
-        font-size: 22px;
-        margin-top: 15px;
+        & .bi-box-arrow-up-right {
+          position: absolute;
+          top: .5rem;
+          right: -2rem;
+          font-size: 1.6rem;
+        }
       }
     }
     
@@ -269,10 +272,13 @@ header {
           font-size: 2rem;
           color: #21243D;
           text-decoration: none;
-          /* width: 15rem; */
+          position: relative;
 
           & .bi-box-arrow-up-right {
-            font-size: 1.5rem;
+            position: absolute;
+            font-size: 1.6rem;
+            padding-left: .5rem;
+            top: -.5rem;
           }
         }
 
@@ -336,9 +342,17 @@ header {
           & a {
             text-decoration: none;
             color: #000;
+            position: relative;
 
             &:hover {
               text-decoration: underline;
+            }
+
+            & .bi-box-arrow-up-right {
+              position: absolute;
+              top: 0;
+              right: -2rem;
+              font-size: 1.6rem;
             }
           }
         }
