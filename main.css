@@ -439,7 +439,9 @@ footer {
         & .skills-technologies-logos {
           gap: 4rem;
 
-          & .html {
+          & .html, 
+          .reactjs, 
+          .bootstrap {
             width: 15rem;
             height: 15rem;
           }
@@ -452,11 +454,6 @@ footer {
           & .js {
             width: 17rem;
             height: 17rem;
-          }
-
-          & .reactjs {
-            width: 15rem;
-            height: 15rem;
           }
 
           & .git {
@@ -472,11 +469,6 @@ footer {
           & .sass {
             width: 18rem;
             height: 16rem;
-          } 
-
-          & .bootstrap {
-            width: 15rem;
-            height: 15rem;
           }
 
           & .tailwind {
@@ -577,10 +569,13 @@ footer {
         & .skills-technologies-logos {
           gap: 2rem;
 
+          & .css {
+            width: 19rem;
+          }
+
           & .js {
             width: 25rem;
-            height: 20rem;
-            margin-top: -1.05rem
+            height: 25rem;
           }
 
           & .git {
@@ -730,7 +725,6 @@ footer {
           & .js {
             width: 30rem;
             height: 26.5rem;
-            margin-top: -1.05rem
           }
 
           & .git {
