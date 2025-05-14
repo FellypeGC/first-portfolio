@@ -273,6 +273,10 @@ header {
           color: #21243D;
           text-decoration: none;
           position: relative;
+          
+          &:hover {
+            text-decoration: underline;
+          }
 
           & .bi-box-arrow-up-right {
             position: absolute;
