@@ -10,7 +10,7 @@ Meu primeiro site de portfólio, onde inclui traduções para português brasile
 Este projeto passará por mudanças futuras, como layout, tecnologias, etc.
 
 # ENGLISH
-My first landing page web portfolio, which includes translations for brazilian portuguese (main) and english languages. This was developed with:
+My first landing page web portfolio, which includes translations for brazilian portuguese (main) and english languages. I've developed with:
 
 * HTML;
 * CSS;
