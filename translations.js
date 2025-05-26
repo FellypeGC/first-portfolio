@@ -61,10 +61,6 @@ const description2 = document.querySelector(".description2");
 const description3 = document.querySelector(".description3");
 const languageSelector = document.querySelector("select");
 
-languageSelector.addEventListener("change", (event) => {
-  setLanguage(event.target.value);
-});
-
 const setLanguage = (language) => {
   if (language == "en") {
     aboutLink.innerText = translations.en.aboutLink;
@@ -106,3 +102,7 @@ const setLanguage = (language) => {
     description3.innerText = translations.ptBr.description3;
   }
 }
+
+languageSelector.addEventListener("change", (event) => {
+  setLanguage(event.target.value);
+});
