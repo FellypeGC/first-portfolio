@@ -4,6 +4,12 @@ colors:
         3F3D56
 */
 
+:root {
+  --white-color: #fff;
+  --headline-color: #3F3D56;
+  --about-background-color: #A09BFF;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -43,7 +49,7 @@ body {
 .skills-headline, 
 .projects-headline,
 .contacts-headline {
-  color: #3F3D56;
+  color: var(--headline-color);
 }
 
 img {
@@ -58,8 +64,8 @@ header {
   width: 100%;
 
   & .header-container {
-    background-color: #3F3D56;
-    color: #fff;
+    background-color: var(--headline-color);
+    color: var(--white-color);
     display: flex;
     justify-content: space-around;
     padding: 1rem;
@@ -101,7 +107,7 @@ header {
             transition: all .3s ease-in;
 
             &:hover {
-              border-bottom-color: #fff;
+              border-bottom-color: var(--white-color);
             }
           }
         }
@@ -142,8 +148,8 @@ header {
 }
 
 .about {
-  background-color: #A09BFF;
-  color: #fff;
+  background-color: var(--about-background-color);
+  color: var(--white-color);
 
   & .about-container {
     display: flex;
