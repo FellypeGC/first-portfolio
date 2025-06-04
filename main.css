@@ -8,6 +8,7 @@ colors:
   --white-color: #fff;
   --black-color: #000;
   --headline-color: #3F3D56;
+  --project-color: #21243D;
   --about-background-color: #A09BFF;
 }
 
@@ -277,7 +278,7 @@ header {
 
         & .project-name {
           font-size: 2rem;
-          color: #21243D;
+          color: var(--project-color);
           text-decoration: none;
           position: relative;
           
@@ -302,7 +303,7 @@ header {
             & .tech-icon-box {
               width: 40px;
               height: 40px;
-              border: 2px solid #21243D;
+              border: 2px solid var(--project-color);
               border-radius: 50%;
               padding: 4px;
 
