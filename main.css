@@ -1,6 +1,7 @@
 :root {
   --white-color: #fff;
   --black-color: #000;
+  --gray-color: #C2C2C2;
   --headline-color: #3F3D56;
   --project-color: #21243D;
   --about-background-color: #A09BFF;
@@ -249,7 +250,7 @@ header {
       display: flex;
       align-items: flex-start;
       gap: 4rem;
-      border-bottom: 1px solid #C2C2C2;
+      border-bottom: 1px solid var(--gray-color);
       padding: 2.5rem 0;
 
       & .project-image-box {
@@ -391,7 +392,7 @@ footer {
           display: none;
           flex-direction: column;
           position: absolute;
-          background-color: #3F3D56;
+          background-color: var(--headline-color);
           padding: 4rem 2rem 2rem;
           top: 100%;
           right: 0;
