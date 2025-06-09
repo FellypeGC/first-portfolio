@@ -9,7 +9,7 @@ Meu primeiro site de portfólio, onde inclui traduções para português brasile
 
 Este projeto passará por mudanças futuras, como layout, tecnologias, etc.
 
-## 🇺ENGLISH
+## ENGLISH
 My first landing page web portfolio, which includes translations for brazilian portuguese (main) and english languages. I've developed with:
 
 * HTML;
