@@ -1,11 +1,7 @@
-import React from 'react'
 import logo from '../assets/code-icon.svg'
 import { Link } from "react-router";
 
-
-type Props = {}
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   return (
     <nav className="shadow-md *:text-2xl bg-gray-900">
       <div className="container mx-auto px-4 py-2 flex items-center justify-around bg-gray-700 rounded-b-2xl w-1/2">
