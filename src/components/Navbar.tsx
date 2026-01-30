@@ -1,4 +1,4 @@
-import logo from '../assets/code-icon.svg'
+import logo from '../assets/code-icon-white.svg'
 import { Link } from "react-router"
 
 // Navigation links data structure for easy modification and scalability
