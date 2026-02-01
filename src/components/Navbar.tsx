@@ -13,8 +13,9 @@ const Navbar = () => {
   return (
     <nav className="*:text-2xl">
       <div className="shadow-md mx-auto px-4 py-2 flex items-center justify-around bg-gray-700 rounded-b-2xl w-1/2  position-sticky top-0">
-        <div className="rounded-xl p-1 bg-gray-500 border-glass">
+        <div className="rounded-xl p-1 bg-gray-500 border-glass flex">
           <img src={logo} alt="Code Icon Logo" className="h-7 w-8" />
+          <h1>fllpdev.ts</h1>
         </div>
         <ul className="flex justify-center align-center bg-gray-600 border-glass rounded-[99px] px-1 py-1">
           {navigationLinks.map((link) => (
