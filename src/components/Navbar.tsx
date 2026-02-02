@@ -1,5 +1,6 @@
 import logo from '../assets/code-icon-white.svg'
 import { Link } from "react-router"
+import Button from './Button'
 
 // Navigation links data structure for easy modification and scalability
 const navigationLinks = [
@@ -26,6 +27,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        <Button text="Download resume" />
       </div>
     </nav>
   )
