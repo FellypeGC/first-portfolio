@@ -1,12 +1,17 @@
+import type { ReactNode } from "react";
 
 type Props = {
-  className: string;
+  className?: string;
+  children?: ReactNode; 
   text: string;
 }
 
-const Button = ({ className = "", text }: Props) => {
+const Button = ({ className = "", children, text }: Props) => {
   return (
-    <button className={className}>{text}</button> // hover:bg-[#3838ff]
+    <button className={className}>
+      {children}
+      {text}
+    </button> // hover:bg-[#3838ff]
   )
 }
 
