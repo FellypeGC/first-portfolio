@@ -12,22 +12,18 @@ const navigationLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="*:text-2xl">
-      <div className="shadow-md mx-auto px-4 py-2 flex items-center justify-around bg-gray-700 rounded-b-2xl w-1/2  position-sticky top-0">
-        <div className="rounded-xl p-1 bg-gray-500 border-glass flex">
-          <img src={logo} alt="Code Icon Logo" className="h-7 w-8" />
-          <h1>fllpdev.ts</h1>
-        </div>
-        <ul className="flex justify-center align-center bg-gray-600 border-glass rounded-[99px] px-1 py-1">
+    <nav className="*:text-2xl ">
+      <div className="flex gap-5">
+        <ul className="flex justify-center px-1 py-1 gap-4">
           {navigationLinks.map((link) => (
-            <li key={link.path} className="px-2.5 hover:bg-gray-500 rounded-full transition-all duration-300 ">
+            <li key={link.path} className="rounded-full transition-all duration-300 flex items-center">
               <Link
-                to={link.path} className="mx-4 text-white hover:opacity-80"
+                to={link.path} className="text-white flex align-center hover:opacity-80 hover:text-blue-700 text-sm"
               >{link.name}</Link>
             </li>
           ))}
         </ul>
-        <Button text="Download resume" />
+        <Button className="px-4 bg-blue-700 cursor-pointer text-sm font-bold rounded-[7px] hover:opacity-80" text="resume.pdf" />
       </div>
     </nav>
   )
