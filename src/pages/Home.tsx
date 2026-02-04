@@ -6,11 +6,11 @@ const Home = () => {
   const enterpriseOrCompany: string = "?";
 
   return (
-    <section className="text-white flex justify-center items-center gap-4 md:py-24 max-w-300 mx-auto px-6 md:px-20 min-h-auto">
+    <section className="text-white flex justify-center items-center gap-4 px-6 md:py-24 md:px-20 max-w-300 mx-auto flex-wrap">
       {/* If: Available for Hire ? Available for hire : Currently working at [enterprise/company name] */}
-      <div>
+      <div className="w-100"> 
         {isAvailable ? (
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 text-green-500 border border-green-500/20 text-xs font-bold uppercase tracking-widest">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 text-green-500 border border-green-500/20 text-xs font-bold uppercase tracking-widest w-47">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
@@ -30,6 +30,9 @@ const Home = () => {
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight max-w-md ">
           Software <span className="text-[rgb(37,106,244)] text-glow">Developer</span>
         </h1>
+        <p>
+          Hello, World! I'm a Software Developer focused on Front-End rather than Back-End (...)
+        </p>
       </div>
 
       {/* VS Code Terminal Card */}
