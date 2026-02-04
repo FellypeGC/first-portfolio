@@ -91,7 +91,10 @@ const Home = () => {
               <span>&nbsp;&nbsp;status: <span className="text-green">"Building the future"</span>,
               </span>
             </div>
-
+            <div className="flex gap-4">
+              <span className="text-slate-600 select-none">8</span>
+              <span>{"}"};</span>
+            </div>
             {/* Última linha */}
             <div className="flex gap-4 mt-2">
               <span className="text-slate-600 select-none">9</span>
