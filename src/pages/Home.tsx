@@ -5,7 +5,7 @@ const Home = () => {
   const enterpriseOrCompany: string = "?";
 
   return (
-    <div className="text-white h-screen flex w-full justify-center items-center gap-4">
+    <section className="text-white flex justify-center items-center gap-4 md:py-24 max-w-300 mx-auto px-6 md:px-20">
       {/* If: Available for Hire ? Available for hire : Currently working at [enterprise/company name] */}
       <div>
         {isAvailable ? (
@@ -28,20 +28,25 @@ const Home = () => {
             </div>
           )
         }
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight max-">
+        <h1 className="text-5xl md:text-7xl font-bold tracking-tight max-w-md ">
           Software <span className="text-[rgb(37,106,244)] text-glow">Developer</span>
         </h1>
       </div>
 
-      <div>
-        <div className="flex gap-2
-        ">
-          <span className="size-3 rounded-full bg-[#ff5f56]"></span>
-          <span className="size-3 rounded-full bg-[#ffbd2e]"></span>
-          <span className="size-3 rounded-full bg-[#27c93f]"></span>
+      <div className="relative terminal-glow">
+        <div className="bg-[#1f242d] w-full rounded-xl border-b border-white/5">
+          <div className="flex gap-4 px-4 py-3 items-center justify-between">
+            <div className="flex gap-2">
+              <span className="size-3 rounded-full bg-[#ff5f56]"></span>
+              <span className="size-3 rounded-full bg-[#ffbd2e]"></span>
+              <span className="size-3 rounded-full bg-[#27c93f]"></span>
+            </div>
+            <h2 className="text-[10px] uppercase">Developer.ts — Visual Studio Code</h2>
+            <div className="w-10"></div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
