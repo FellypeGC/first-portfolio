@@ -81,11 +81,6 @@ const Home = () => {
               <span>&nbsp;&nbsp;focus: [<span className="text-green">"React.js"</span>, <span className="text-green">"TypeScript"</span>,
               <span className="text-green"> "Tailwind CSS"</span>, <span className="text-green"> "Node.js"</span>, <span className="text-green"> "PostgreSQL"</span>],</span>
             </div>
-
-            <div className="flex gap-4">
-              <span className="text-slate-600 select-none">6</span>
-              <span>&nbsp;&nbsp;focus: [<span className="text-green">'Typescript'</span>, <span className="text-green">'Next.js'</span>, <span className="text-green">'Clean Architecture'</span>],</span>
-            </div>
             <div className="flex gap-4">
               <span className="text-slate-600 select-none">7</span>
               <span>&nbsp;&nbsp;status: <span className="text-green">"Building the future"</span>,
