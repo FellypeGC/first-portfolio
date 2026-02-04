@@ -21,4 +21,12 @@ body {
   .terminal-glow {
     box-shadow: 0 0 20px rgba(37, 106, 244, 0.15);
   }
+
+  .text-purple {
+    color: rgb(168 85 247);
+  }
+
+  .text-green {
+    color: rgb(34 197 94);
+  }
 }
