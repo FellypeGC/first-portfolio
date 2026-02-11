@@ -6,7 +6,7 @@ type StatusBadgeProps = {
 type StatusClasses = {
   statusClasses: string;
   dotClasses: string;
-  labelClass: string;
+  label: string;
 }
 
 const StatusBadge = ({ isAvailable, companyName }: StatusBadgeProps) => {
@@ -14,7 +14,7 @@ const StatusBadge = ({ isAvailable, companyName }: StatusBadgeProps) => {
   const status: StatusClasses = {
     statusClasses: isAvailable ? "bg-green-500/10 text-green-500 border-green-500/20" : "bg-[rgba(37,106,244,0.1)] text-[rgb(37,106,244)] border-[rgba(37,106,244,0.2)]",
     dotClasses: isAvailable ? "bg-green-500" : "bg-[rgb(37,106,244)]",
-    labelClass: isAvailable ? "Available for Hire" : `Working at ${companyName}`,
+    label: isAvailable ? "Available for Hire" : `Working at ${companyName}`,
   }
 
   return (
@@ -23,7 +23,7 @@ const StatusBadge = ({ isAvailable, companyName }: StatusBadgeProps) => {
         <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${status.dotClasses}`}></span>
         <span className={`relative inline-flex rounded-full h-2 w-2 ${status.dotClasses}`}></span>
       </span>
-      <span>{status.labelClass}</span>
+      <span>{status.label}</span>
     </div>
   );
 };
