@@ -5,8 +5,8 @@ import Button from './Button'
 // Navigation links data structure for easy modification and scalability
 const navigationLinks = [
   { name: "Home", path: "/" },
+  { name: "Skills", path: "/skills" },
   { name: "Projects", path: "/projects" },
-  { name: "About", path: "/about" },
   { name: "Contact", path: "/contact" },
 ]
 
