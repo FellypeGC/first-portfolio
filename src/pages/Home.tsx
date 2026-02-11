@@ -3,7 +3,7 @@ import StatusBadge from '../components/StatusBadge';
 import TerminalCard from '../components/TerminalCard';
 
 const Home = () => {
-  const isAvailable: boolean = false;
+  const isAvailable: boolean = true;
   const enterpriseOrCompany: string = "?";
 
   return (
