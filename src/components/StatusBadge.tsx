@@ -10,7 +10,6 @@ type StatusConfig = {
 }
 
 const StatusBadge = ({ isAvailable, companyName }: StatusBadgeProps) => {
-  // 1. Definimos as variáveis de estilo baseadas no status
   const status: StatusConfig = {
     statusClasses: isAvailable ? "bg-green-500/10 text-green-500 border-green-500/20" : "bg-[rgba(37,106,244,0.1)] text-[rgb(37,106,244)] border-[rgba(37,106,244,0.2)]",
     dotClasses: isAvailable ? "bg-green-500" : "bg-[rgb(37,106,244)]",
