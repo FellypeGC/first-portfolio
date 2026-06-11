@@ -15,7 +15,7 @@ const Home = () => {
           Software <span className="text-[rgb(37,106,244)] text-glow">Developer</span>
         </h1>
         <p>
-          Hello, World! I'm a Software Developer focused on Front-End rather than Back-End (...)
+          Hello, World! I'm a Software Developer focused on Front-End rather than Back-End, building reliable, scalable and custom-made applications.
         </p>
       </div>
 
