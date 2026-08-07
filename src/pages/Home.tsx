@@ -10,9 +10,11 @@ const Home = () => {
 
   return (
     <section className="text-white flex justify-center items-center gap-4 px-6 md:py-24 md:px-20 max-w-300 mx-auto flex-wrap">
-      <div className="w-100"> 
+      <div className="flex flex-col w-100 h-100 gap-6"> 
         {/* If: Available for Hire ? Available for hire : Currently working at [enterprise/company name] */}
-        <StatusBadge isAvailable={isAvailable} companyName={enterpriseOrCompany} />
+        <span>
+          <StatusBadge isAvailable={isAvailable} companyName={enterpriseOrCompany} />
+        </span>
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight max-w-md ">
           Software <span className="text-[rgb(37,106,244)] text-glow">Developer</span>
         </h1>
