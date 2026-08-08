@@ -7,6 +7,8 @@ import App from './App.tsx'
 import Home from './pages/Home.tsx'
 import Projects from './pages/Projects.tsx'
 import NotFound from './pages/NotFound.tsx'
+import Contact from './pages/Contact.tsx'
+import Skills from './pages/Skills.tsx'
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
       {
         path: '/projects',
         element: <Projects />
+      },
+      {
+        path: '/contact',
+        element: <Contact />
+      },
+      {
+        path: '/skills',
+        element: <Skills />
       },
       {
         path: '*',
