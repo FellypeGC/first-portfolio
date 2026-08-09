@@ -1,7 +1,7 @@
 const TerminalCard = () => {
   return (
-    <div className="relative terminal-glow">
-      <div className="bg-[#1f242d] rounded-xl border-b border-white/5 overflow-hidden w-135">
+    <div className="relative terminal-glow max-w-120">
+      <div className="bg-[#1f242d] rounded-xl border-b border-white/5 overflow-hidden">
         <div className="flex gap-4 px-4 py-3 items-center justify-between">
           <div className="flex gap-2">
             <span className="size-3 rounded-full bg-[#ff5f56]"></span>
@@ -9,7 +9,7 @@ const TerminalCard = () => {
             <span className="size-3 rounded-full bg-[#27c93f]"></span>
           </div>
           <h2 className="text-[10px] uppercase text-slate-500 font-bold">Developer.ts — Visual Studio Code</h2>
-          <div className="w-10"></div>
+          <span className="w-10"></span>
         </div>
         <div className="p-6 font-mono bg-[#161B22] overflow-x-auto">
           <div className="flex gap-4">
