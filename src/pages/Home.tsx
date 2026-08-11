@@ -9,8 +9,8 @@ const Home = () => {
   const enterpriseOrCompany: string = "?";
 
   return (
-    <section className="text-white flex justify-center items-center gap-8 px-6 md:py-24 md:px-20 max-w-300 mx-auto flex-wrap">
-      <div className="flex flex-col w-100 h-100 gap-6"> 
+    <section className="text-white flex justify-center items-center gap-12 px-6 md:py-20 md:flex-row md:px-20 max-w-7xl w-full mx-auto flex-wrap">
+      <div className="flex flex-col w-100 max-w-full md:w-120 md:h-100 gap-6"> 
         {/* If: Available for Hire ? Available for hire : Currently working at [enterprise/company name] */}
         <span>
           <StatusBadge isAvailable={isAvailable} companyName={enterpriseOrCompany} />
@@ -22,7 +22,7 @@ const Home = () => {
           Hello, World! I'm a Software Developer focused on Front-End rather than Back-End, building reliable, scalable and custom-made applications.
         </p>
 
-        <div className="flex gap-4">
+        <div className="flex gap-4 pt-2">
           <Link 
             to="/projects" 
             className="flex items-center justify-center w-40 h-14 text-white cursor-pointer text-sm font-bold text-center bg-[rgb(37,106,244)] rounded-[10px] outline-none border-none transition-all duration-200 ease-in-out delay-0 hover:opacity-90 hover:scale-[0.95]"

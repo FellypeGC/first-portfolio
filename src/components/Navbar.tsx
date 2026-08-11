@@ -12,7 +12,7 @@ const navigationLinks = [
 
 const Navbar = () => {
   return (
-    <nav className="*:text-2xl">
+    <nav className="*:text-2xl hidden md:flex md:justify-between md:items-center">
       <div className="flex gap-5">
         <ul className="flex justify-center px-1 py-1 gap-4">
           {navigationLinks.map((link) => (
