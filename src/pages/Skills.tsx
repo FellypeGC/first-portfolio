@@ -8,8 +8,8 @@ import {
   Sparkles,
   Terminal,
   Wrench,
-} from "lucide-react"; // Bot and Terminal
-import SkillCard from "../components/SkillCard";
+} from "lucide-react";
+import SkillCard from "../components/SkillCard"
 
 type SkillItem = {
   icon: React.ReactNode;
@@ -20,11 +20,11 @@ type SkillItem = {
   hoverBorder: string;
 };
 
-type techCategories = {
+type TechCategory = {
   label: string;
   icon: React.ReactNode;
   skills: string[];
-}[];
+};
 
 const Skills = () => {
   const skillsData: SkillItem[] = [
@@ -90,7 +90,7 @@ const Skills = () => {
     },
   ];
 
-  const techCategories: techCategories = [
+  const techCategories: TechCategory[] = [
     {
       label: "Languages & Frameworks",
       icon: <Terminal className="w-4 h-4 text-[rgb(37,106,244)]" />,
@@ -135,58 +135,53 @@ const Skills = () => {
   ];
 
   return (
-    <section className="text-white flex justify-between items-center max-w-316 mx-auto min-h-100 flex-wrap gap-12 px-6 md:py-12 md:flex-row">
-      <div className="flex flex-col w-full md:w-96 h-auto">
-        <div className="lg:col-span-5 flex flex-col gap-6 pr-0 lg:pr-4">
-          <div className="flex flex-col gap-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-[rgb(37,106,244)]">
-              Engineering Mindset
-            </span>
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white">
-              Technical Expertise
-            </h1>
-            <p className="text-slate-400 text-base leading-relaxed">
-              I'm currently building robust frontend infrastructures that scale.
-              My approach combines clean code principles, full type safety, and
-              AI-assisted workflows with a relentless focus on the end-user
-              experience.
-            </p>
+    <section className="text-white flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto w-full gap-8 lg:gap-12 px-6 py-8 md:py-12">
+      <div className="flex flex-col w-full lg:w-96 shrink-0 gap-6 h-full">
+        <div className="flex flex-col gap-3">
+          <span className="text-xs font-bold uppercase tracking-widest text-[rgb(37,106,244)]">
+            Engineering Mindset
+          </span>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white">
+            Technical Expertise
+          </h1>
+          <p className="text-slate-400 text-base leading-relaxed">
+            I'm currently building robust frontend infrastructures that scale.
+            My approach combines clean code principles, full type safety, and
+            AI-assisted workflows with a relentless focus on the end-user
+            experience.
+          </p>
+          <p className="text-slate-400 text-sm md:text-base leading-relaxed">
+            An overview of the technologies, frameworks, and tools I use to
+            build end-to-end applications.
+          </p>
+        </div>
 
-            <div className="flex flex-col gap-3">
-              <p className="text-slate-400 text-sm md:text-base leading-relaxed">
-                An overview of the technologies, frameworks, and tools I use to
-                build end-to-end applications.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-5 pt-2">
-            {techCategories.map((category, i) => (
-              <div key={i} className="flex flex-col gap-2.5">
-                <div className="flex items-center gap-2 text-xs font-semibold text-slate-300">
-                  {category.icon}
-                  <span>{category.label}</span>
-                </div>
-                <div className="flex flex-wrap gap-1.5">
-                  {category.skills.map((tech, i) => (
-                    <span
-                      key={i}
-                      className="px-2.5 py-1 text-xs font-medium text-slate-300 bg-[#121318] border border-white/10 rounded-md transition-colors hover:border-white/20"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+        <div className="flex flex-col gap-5 pt-2">
+          {techCategories.map((category, i) => (
+            <div key={i} className="flex flex-col gap-2.5">
+              <div className="flex items-center gap-2 text-xs font-semibold text-slate-300">
+                {category.icon}
+                <span>{category.label}</span>
               </div>
-            ))}
-          </div>
+              <div className="flex flex-wrap gap-1.5">
+                {category.skills.map((tech, id) => (
+                  <span
+                    key={id}
+                    className="px-2.5 py-1 text-xs font-medium text-slate-300 bg-[#121318] border border-white/10 rounded-md transition-colors hover:border-white/20"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4 w-3xl max-h-screen text-black">
-        {skillsData.map((skill, index) => (
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full lg:flex-1">
+        {skillsData.map((skill, i) => (
           <SkillCard
-            key={index}
+            key={i}
             icon={skill.icon}
             title={skill.title}
             description={skill.description}

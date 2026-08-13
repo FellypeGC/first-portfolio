@@ -15,7 +15,7 @@ const SkillCard = ({
 }: SkillCardProps) => {
   return (
     <div
-      className={`p-6 rounded-2xl border border-white/10 bg-[#121318] flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1 cursor-pointer ${hoverBorder}`}
+      className={`p-6 rounded-2xl border border-white/10 bg-[#121318] w-full flex flex-col gap-3 transition-all duration-300 hover:-translate-y-1 cursor-pointer ${hoverBorder}`}
     >
       <div className={`p-2.5 w-fit rounded-xl bg-white/5 ${iconColor}`}>
         {icon}

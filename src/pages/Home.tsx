@@ -19,7 +19,7 @@ const Home = () => {
           Software <span className="text-[rgb(37,106,244)] text-glow">Developer</span>
         </h1>
         <p className="md:text-md text-slate-400">
-          Hello, World! I'm a Software Developer focused on Front-End rather than Back-End, building reliable, scalable and custom-made applications.
+          Hello, World! I'm a Software Developer focused on Front-End rather than Back-End, building reliable, scalable and custom-made applications with AI-powered tools.
         </p>
 
         <div className="flex gap-4 pt-2">
