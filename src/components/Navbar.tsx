@@ -19,9 +19,7 @@ const Navbar = () => {
 
   return (
     <header className="relative z-50">
-      {/* Container Principal */}
       <div className="flex items-center justify-between md:justify-end">
-        {/* Navigation Desktop */}
         <nav className="hidden md:flex md:justify-between md:items-center">
           <div className="flex gap-5">
             <ul className="flex justify-center px-1 py-1 gap-4">
@@ -45,7 +43,6 @@ const Navbar = () => {
           </div>
         </nav>
 
-        {/* Botão Hambúrguer Mobile */}
         <button
           onClick={toggleMenu}
           aria-label="Toggle Menu"
@@ -55,7 +52,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Drawer / Overlay Mobile */}
       {isOpen && (
         <div className="md:hidden absolute top-15 right-0 w-64 sm:w-72 bg-[#161b22] border border-white/10 p-6 flex flex-col gap-5 shadow-2xl rounded-2xl animate-in fade-in slide-in-from-top-2 duration-150 z-50">
           <ul className="flex flex-col gap-3">
