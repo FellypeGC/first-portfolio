@@ -10,7 +10,7 @@ const Home = () => {
   const enterpriseOrCompany: string = "?";
 
   return (
-    <section className="text-white flex justify-center items-center gap-12 px-6 md:py-20 md:flex-row md:px-20 max-w-7xl w-full mx-auto flex-wrap">
+    <section className="text-white flex justify-center items-center gap-12 p-6 md:py-20 md:flex-row md:px-20 max-w-7xl w-full mx-auto flex-wrap">
       <div className="flex flex-col w-100 max-w-full md:w-120 md:h-100 gap-6">
         {/* If: Available for Hire ? Available for hire : Currently working at [enterprise/company name] */}
         <span>
