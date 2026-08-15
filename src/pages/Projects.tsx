@@ -1,46 +1,11 @@
 import { ArrowUpRight } from "lucide-react";
-import ProjectCard, { type Project } from "../components/ProjectCard";
-
-const projectsData: Project[] = [
-  {
-    id: "1",
-    title: "<HabitTrack />",
-    description:
-      "A habit-tracking application designed to help users build consistency through daily check-ins, visual stats, and localized persistent data logic.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
-    tags: ["REACT 19", "TYPESCRIPT", "TAILWIND CSS"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
-  },
-  {
-    id: "2",
-    title: "<CloneReserva />",
-    description:
-      "An e-commerce storefront clone focused on layout replication, interactive component design, dynamic product catalogs, and responsive UX.",
-    image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop",
-    tags: ["NEXT.JS 15", "TAILWIND CSS", "TYPESCRIPT"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
-  },
-  {
-    id: "3",
-    title: "<OvermatchEnglish />",
-    description:
-      "An institutional landing page built for an English learning academy, featuring course previews, modern layout structuring, and fast performance.",
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1000&auto=format&fit=crop",
-    tags: ["REACT", "TYPESCRIPT", "TAILWIND"],
-    demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
-  },
-];
+import { projectsData } from "../data/projects";
+import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
   return (
     <section className="text-white max-w-7xl mx-auto w-full px-6 py-8 md:py-12 flex flex-col gap-8">
-      <div className="flex justify-between items-end border-b border-white/5 pb-4">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 border-b border-white/5 pb-4">
         <div className="flex flex-col gap-2">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
             Featured Projects
@@ -51,10 +16,10 @@ const Projects = () => {
         </div>
 
         <a
-          href="https://github.com"
+          href="https://github.com/FellypeGC?tab=repositories"
           target="_blank"
           rel="noopener noreferrer"
-          className="nav-link-animated text-sm font-semibold flex items-center gap-1 group"
+          className="nav-link-animated text-sm font-semibold flex items-center gap-1 group self-start sm:self-auto"
         >
           View all projects
           <ArrowUpRight className="w-4 h-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
