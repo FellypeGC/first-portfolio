@@ -10,7 +10,7 @@ import {
   Wrench,
 } from "lucide-react";
 import { type TechCategory } from "../models/tech-category-model";
-import type { SkillItem } from "../models/skill";
+import type { SkillItem } from "../models/skill-model";
 
 export const techCategories: TechCategory[] = [
   {
