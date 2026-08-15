@@ -2,7 +2,6 @@ import { useState } from "react";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { HiMenu, HiX } from "react-icons/hi";
 import { Link } from "react-router";
-import Button from "./Button";
 
 const navigationLinks = [
   { name: "Home", path: "/" },
@@ -34,12 +33,14 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <Button
+            <a
+              href="/public/resume-fgc.pdf"
+              download="resume.pdf"
               className="flex items-center gap-1 px-4 py-2 bg-blue-700 cursor-pointer text-sm font-bold rounded-[7px] transition-all duration-150 hover:opacity-90 hover:shadow-[0_0_15px_rgba(37,106,244,0.6)] hover:border-[rgba(37,106,244,0.8)] hover:scale-[0.98]"
-              text="resume.pdf"
             >
               <MdOutlineFileDownload className="text-xl" />
-            </Button>
+              resume.pdf
+            </a>
           </div>
         </nav>
 
@@ -68,12 +69,14 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="pt-2">
-            <Button
+            <a
+              href="/public/resume-fgc.pdf"
+              download="resume.pdf"
               className="w-full justify-center flex items-center gap-1 px-4 py-3 bg-blue-700 cursor-pointer text-sm font-bold rounded-[7px] transition-all duration-150 hover:opacity-90"
-              text="resume.pdf"
             >
               <MdOutlineFileDownload className="text-xl" />
-            </Button>
+              resume.pdf
+            </a>
           </div>
         </div>
       )}
