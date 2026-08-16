@@ -1,8 +1,10 @@
 import { ArrowUpRight } from "lucide-react";
 import { useProjectsData } from '../data/projects';
 import ProjectCard from "../components/ProjectCard";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+  const { t } = useTranslation();
   const projectsData = useProjectsData();
 
   return (
@@ -10,10 +12,10 @@ const Projects = () => {
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 border-b border-white/5 pb-4">
         <div className="flex flex-col gap-2">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
-            Featured Projects
+            {t("projects.title")}
           </h2>
           <p className="text-slate-400 text-sm md:text-base">
-            A selection of my recent engineering challenges and solutions.
+            {t("projects.subtitle")}
           </p>
         </div>
 
@@ -23,7 +25,7 @@ const Projects = () => {
           rel="noopener noreferrer"
           className="nav-link-animated text-sm font-semibold flex items-center gap-1 group self-start sm:self-auto"
         >
-          View all projects
+          {t("projects.viewAll")}
           <ArrowUpRight className="w-4 h-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
         </a>
       </div>
