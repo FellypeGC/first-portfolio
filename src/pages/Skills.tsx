@@ -1,27 +1,29 @@
 import SkillCard from "../components/SkillCard";
-import { techCategories } from "../data/skills";
-import { skillsData } from "../data/skills";
+import { useTechCategories } from "../data/skills";
+import { useSkillsData } from "../data/skills";
+import { useTranslation } from "react-i18next";
+
 
 const Skills = () => {
+  const { t } = useTranslation();
+  const techCategories = useTechCategories();
+  const skillsData = useSkillsData();
+
   return (
     <section className="text-white flex flex-col lg:flex-row justify-between items-center max-w-7xl mx-auto w-full gap-8 lg:gap-12 px-6 py-8 md:py-12">
       <div className="flex flex-col w-full lg:w-96 shrink-0 gap-6 h-full">
         <div className="flex flex-col gap-3">
           <span className="text-xs font-bold uppercase tracking-widest text-[rgb(37,106,244)]">
-            Engineering Mindset
+            {t("skills.tagline")}
           </span>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white">
-            Technical Expertise
+            {t("skills.title")}
           </h1>
           <p className="text-slate-400 text-base leading-relaxed">
-            I'm currently building robust frontend infrastructures that scale.
-            My approach combines clean code principles, full type safety, and
-            AI-assisted workflows with a relentless focus on the end-user
-            experience.
+            {t("skills.description1")}
           </p>
           <p className="text-slate-400 text-sm md:text-base leading-relaxed">
-            An overview of the technologies, frameworks, and tools I use to
-            build end-to-end applications.
+            {t("skills.description2")}
           </p>
         </div>
 

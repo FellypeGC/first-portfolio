@@ -3,7 +3,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App.tsx'
-
+import "./i18n.ts";
 import Home from './pages/Home.tsx'
 import Projects from './pages/Projects.tsx'
 import NotFound from './pages/NotFound.tsx'

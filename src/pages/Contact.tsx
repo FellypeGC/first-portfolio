@@ -2,10 +2,13 @@ import { useState, useRef, type FormEvent } from "react";
 import { FiSend, FiCheck, FiAlertCircle } from "react-icons/fi";
 import { BLOCKED_DOMAINS } from "../data/blocked-domains";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 const COOLDOWN_TIME_MS = 60000; // 60 segundos entre envios
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   const formRef = useRef<HTMLFormElement>(null);
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
@@ -136,14 +139,13 @@ const Contact = () => {
     >
       <div className="text-center mb-10">
         <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-          Ready to build something{" "}
+          {t("contact.title")}{" "}
           <span className="text-[rgb(37,106,244)] text-glow">
-            extraordinary?
+            {t("contact.titleHighlight")}
           </span>
         </h2>
         <p className="text-slate-400 mt-3 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
-          Whether you have a specific project in mind or need a developer for
-          your team, let's connect and build something extraordinary together.
+          {t("contact.subtitle")}
         </p>
       </div>
 
@@ -154,7 +156,7 @@ const Contact = () => {
       >
         {/* Campo Honeypot Oculto (Anti-Spam Bot) */}
         <div className="hidden" aria-hidden="true">
-          <label htmlFor="website_url">Do not fill this field</label>
+          <label htmlFor="website_url">{t("contact.labels.website_url")}</label>
           <input
             type="text"
             id="website_url"
@@ -172,14 +174,14 @@ const Contact = () => {
               htmlFor="user_name"
               className="text-xs font-semibold text-slate-400 uppercase tracking-wider"
             >
-              IDENTITY (NAME)
+              {t("contact.labels.name")}
             </label>
             <input
               id="user_name"
               type="text"
               name="user_name"
               required
-              placeholder="John Doe"
+              placeholder={t("contact.placeholders.name")}
               className="bg-[#0d1117] border border-white/10 rounded-lg px-4 py-3 text-slate-200 placeholder-slate-600 text-sm focus:outline-none focus:border-blue-500 transition-colors [&:-webkit-autofill]:[-webkit-box-shadow:0_0_0_50px_#0d1117_inset] [&:-webkit-autofill]:[-webkit-text-fill-color:#e2e8f0]"
             />
           </div>
@@ -189,10 +191,10 @@ const Contact = () => {
               htmlFor="user_email"
               className="text-xs font-semibold text-slate-400 uppercase tracking-wider flex justify-between"
             >
-              <span>ORIGIN (EMAIL)</span>
+              <span>{t("contact.labels.email")}</span>
               {validatingEmail && (
                 <span className="text-blue-400 text-[10px] lowercase animate-pulse">
-                  Verifying domain...
+                  {t("contact.verifyingDomain")}
                 </span>
               )}
             </label>
@@ -204,7 +206,7 @@ const Contact = () => {
               value={emailInput}
               onChange={handleEmailChange}
               onBlur={() => verifyEmailDomain(emailInput)}
-              placeholder="john@domain.com"
+              placeholder={t("contact.placeholders.email")}
               aria-invalid={emailStatus === "invalid"}
               aria-describedby={emailError ? "email-error-msg" : undefined}
               className={`bg-[#0d1117] border rounded-lg px-4 py-3 text-slate-200 placeholder-slate-600 text-sm focus:outline-none focus:bg-[#0d1117] transition-colors [&:-webkit-autofill]:[-webkit-box-shadow:0_0_0_50px_#0d1117_inset] [&:-webkit-autofill]:[-webkit-text-fill-color:#e2e8f0] ${
@@ -231,14 +233,14 @@ const Contact = () => {
             htmlFor="subject"
             className="text-xs font-semibold text-slate-400 uppercase tracking-wider"
           >
-            SUBJECT (TOPIC)
+            {t("contact.labels.subject")}
           </label>
           <input
             id="subject"
             type="text"
             name="subject"
             required
-            placeholder="Job Opportunity / Freelance Project/Inquiry"
+            placeholder={t("contact.placeholders.subject")}
             className="bg-[#0d1117] border border-white/10 rounded-lg px-4 py-3 text-slate-200 placeholder-slate-600 text-sm focus:outline-none focus:border-blue-500 transition-colors [&:-webkit-autofill]:[-webkit-box-shadow:0_0_0_50px_#0d1117_inset] [&:-webkit-autofill]:[-webkit-text-fill-color:#e2e8f0]"
           />
         </div>
@@ -248,14 +250,14 @@ const Contact = () => {
             htmlFor="message"
             className="text-xs font-semibold text-slate-400 uppercase tracking-wider"
           >
-            MESSAGE
+            {t("contact.labels.message")}
           </label>
           <textarea
             id="message"
             name="message"
             required
             rows={5}
-            placeholder="System/job description..."
+            placeholder={t("contact.placeholders.message")}
             className="bg-[#0d1117] border border-white/10 rounded-lg p-4 text-slate-200 placeholder-slate-600 text-sm focus:outline-none focus:border-blue-500 transition-colors resize-none [&:-webkit-autofill]:[-webkit-box-shadow:0_0_0_50px_#0d1117_inset] [&:-webkit-autofill]:[-webkit-text-fill-color:#e2e8f0]"
           />
         </div>
@@ -267,11 +269,11 @@ const Contact = () => {
           className="w-full py-3.5 bg-blue-600 hover:bg-blue-500 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold text-sm tracking-wider uppercase rounded-lg transition-all shadow-lg shadow-blue-600/20 active:scale-[0.99] flex items-center justify-center gap-2 cursor-pointer"
         >
           {loading ? (
-            <span>SENDING EMAIL...</span>
+            <span>{t("contact.sending")}</span>
           ) : (
             <>
               <FiSend className="text-base" />
-              <span>SEND COMMAND</span>
+              <span>{t("contact.button")}</span>
             </>
           )}
         </button>
@@ -283,7 +285,7 @@ const Contact = () => {
           >
             <FiCheck />
             <span>
-              Your email was sent successfully. I will get back to you soon!
+              {t("contact.success")}
             </span>
           </div>
         )}
@@ -295,7 +297,7 @@ const Contact = () => {
           >
             <FiAlertCircle />
             <span>
-              {errorMessage || "Failed to send email. Please try again."}
+              {errorMessage || t("contact.errorDefault")}
             </span>
           </div>
         )}

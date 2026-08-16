@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 const TerminalCard = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="relative terminal-glow w-100 max-w-full md:max-w-full  sm:max-w-md md:w-120">
       <div className="bg-[#1f242d] rounded-xl border-b border-white/5 overflow-hidden">
@@ -8,7 +12,7 @@ const TerminalCard = () => {
             <span className="size-3 rounded-full bg-[#ffbd2e]"></span>
             <span className="size-3 rounded-full bg-[#27c93f]"></span>
           </div>
-          <h2 className="text-[10px] uppercase text-slate-500 font-bold">Developer.ts — Visual Studio Code</h2>
+          <h2 className="text-[10px] uppercase text-slate-500 font-bold">{t("terminal.title")}</h2>
           <span className="w-10"></span>
         </div>
         <div className="p-6 font-mono bg-[#161B22] overflow-x-auto">
@@ -52,7 +56,7 @@ const TerminalCard = () => {
           </div>
           <div className="flex gap-4">
             <span className="text-slate-600 select-none">7</span>
-            <span>&nbsp;&nbsp;status: <span className="text-green">"Building the future"</span>,
+            <span>&nbsp;&nbsp;status: <span className="text-green">"{t("terminal.status")}"</span>,
             </span>
           </div>
           <div className="flex gap-4">

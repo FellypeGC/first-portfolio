@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "home": "Início",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "resume": "curriculo.pdf"
+  },
+  "home": {
+    "roleTitle": "Software",
+    "roleHighlight": "Developer",
+    "bio": "Olá, mundo! Sou um Desenvolvedor de Software focado em transformar ideias em realidade, construindo aplicações confiáveis, escaláveis e personalizadas com ferramentas impulsionadas por IA.",
+    "viewProjects": "Ver Projetos",
+    "githubProfile": "Perfil no GitHub"
+  },
+  "terminal": {
+    "title": "Developer.ts — Visual Studio Code",
+    "role": "Software Developer",
+    "status": "Construindo o futuro"
+  },
+  "skills": {
+    "tagline": "Mentalidade de Engenharia",
+    "title": "Expertise Técnica",
+    "description1": "Atualmente construo infraestruturas de software robustas e escaláveis. Minha abordagem combina princípios de código limpo, tipagem estática ponta a ponta e fluxos com IA, focando sempre na experiência do usuário.",
+    "description2": "Uma visão geral das tecnologias, frameworks e ferramentas que utilizo para construir aplicações ponta a ponta.",
+    "categories": {
+      "languagesFrameworks": "Linguagens & Frameworks",
+      "backendDatabases": "Backend & Bancos de Dados",
+      "testingDevOps": "Testes, DevOps & Ferramentas"
+    },
+    "cards": {
+      "fullstack": {
+        "title": "Engenharia de Software Full-Stack",
+        "description": "Projetando e construindo soluções de software ponta a ponta combinando código limpo, interfaces frontend modernas e arquiteturas backend escaláveis."
+      },
+      "database": {
+        "title": "Sistemas de Banco de Dados & Modelagem",
+        "description": "Projetando, modelando e gerenciando bancos relacionais (SQL) e NoSQL, com foco na integridade dos dados, indexação eficiente e integração com ORMs."
+      },
+      "architecture": {
+        "title": "Arquitetura de Software",
+        "description": "Projetando e implementando soluções escaláveis com foco em manutenibilidade, princípios SOLID e performance de sistema."
+      },
+      "testing": {
+        "title": "Testes Automatizados",
+        "description": "Escrevendo e mantendo testes para garantir qualidade e confiabilidade de código através de estratégias unitárias, de integração e E2E."
+      },
+      "uiux": {
+        "title": "Design UI/UX & Estilização",
+        "description": "Criando interfaces de usuário bonitas e funcionais com foco em usabilidade, acessibilidade e estética moderna."
+      },
+      "ai": {
+        "title": "Desenvolvimento Assistido por IA",
+        "description": "Utilizando ferramentas como ChatGPT, DeepSeek, Gemini, OpenCode e técnicas avançadas para otimizar o ciclo de desenvolvimento, da geração de código a testes automatizados."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projetos em Destaque",
+    "subtitle": "Uma seleção dos meus desafios de engenharia e soluções recentes.",
+    "viewAll": "Ver todos os projetos",
+    "habitTrack": {
+      "description": "Uma aplicação de rastreamento de hábitos projetada para ajudar usuários a construir consistência por meio de check-ins diários, estatísticas visuais e lógica de dados persistentes locais."
+    },
+    "vaultEngine": {
+      "description": "Uma API robusta para controle de dados e autenticação."
+    },
+    "cloneReserva": {
+      "description": "Um clone de storefront de e-commerce focado na replicação de layout, design de componentes interativos, catálogo dinâmico de produtos e UX responsiva."
+    },
+    "overmatch": {
+      "description": "Uma landing page institucional desenvolvida para um curso de inglês, contando com preview de cursos, estruturação de layout moderno e alta performance."
+    }
+  },
+  "contact": {
+    "title": "Pronto para construir algo",
+    "titleHighlight": "extraordinário?",
+    "subtitle": "Seja para um projeto específico ou para somar ao seu time, vamos nos conectar e construir algo extraordinário juntos.",
+    "labels": {
+      "website_url": "Não preencher este campo",
+      "name": "IDENTIDADE (NOME)",
+      "email": "ORIGEM (E-MAIL)",
+      "subject": "ASSUNTO (TÓPICO)",
+      "message": "MENSAGEM"
+    },
+    "placeholders": {
+      "name": "João Silva",
+      "email": "joao@dominio.com",
+      "subject": "Oportunidade / Projeto Freelance / Consulta",
+      "message": "Descrição do projeto/vaga..."
+    },
+    "verifyingDomain": "Verificando domínio...",
+    "button": "ENVIAR COMANDO",
+    "sending": "ENVIANDO E-MAIL...",
+    "success": "Seu e-mail foi enviado com sucesso. Retornarei em breve!",
+    "errorDefault": "Falha ao enviar e-mail. Por favor, tente novamente.",
+    "errorFixEmail": "Por favor, corrija o endereço de e-mail antes de enviar."
+  }
+}

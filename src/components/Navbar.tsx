@@ -2,15 +2,20 @@ import { useState } from "react";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { HiMenu, HiX } from "react-icons/hi";
 import { Link } from "react-router";
+import { useTranslation } from "react-i18next";
+import { LanguageToggle } from "./LanguageToggle";
 
-const navigationLinks = [
-  { name: "Home", path: "/" },
-  { name: "Skills", path: "/skills" },
-  { name: "Projects", path: "/projects" },
-  { name: "Contact", path: "/contact" },
-];
 
 const Navbar = () => {
+  const { t } = useTranslation();
+
+  const navigationLinks = [
+    { name: t("nav.home"), path: "/" },
+    { name: t("nav.skills"), path: "/skills" },
+    { name: t("nav.projects"), path: "/projects" },
+    { name: t("nav.contact"), path: "/contact" },
+  ];
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
@@ -33,6 +38,7 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+            <LanguageToggle />
             <a
               href="/public/resume-fgc.pdf"
               download="resume.pdf"
@@ -68,7 +74,8 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <div className="pt-2">
+          <LanguageToggle />
+          <div>
             <a
               href="/public/resume-fgc.pdf"
               download="resume.pdf"

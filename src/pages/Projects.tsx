@@ -1,8 +1,10 @@
 import { ArrowUpRight } from "lucide-react";
-import { projectsData } from "../data/projects";
+import { useProjectsData } from '../data/projects';
 import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
+  const projectsData = useProjectsData();
+
   return (
     <section className="text-white max-w-7xl mx-auto w-full px-6 py-8 md:py-12 flex flex-col gap-8">
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 border-b border-white/5 pb-4">
