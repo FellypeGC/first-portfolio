@@ -3,7 +3,7 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { HiMenu, HiX } from "react-icons/hi";
 import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
-import { LanguageToggle } from "./LanguageToggle";
+import LanguageToggle from "./LanguageToggle";
 
 
 const Navbar = () => {

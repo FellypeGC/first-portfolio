@@ -95,5 +95,11 @@
     "success": "Seu e-mail foi enviado com sucesso. Retornarei em breve!",
     "errorDefault": "Falha ao enviar e-mail. Por favor, tente novamente.",
     "errorFixEmail": "Por favor, corrija o endereço de e-mail antes de enviar."
+  },
+  "notFound": {
+    "code": "404_PAGINA_NAO_ENCONTRADA",
+    "title": "Página não encontrada",
+    "description": "A rota que você está procurando não existe, foi removida ou está temporariamente indisponível.",
+    "button": "Voltar ao Início"
   }
 }

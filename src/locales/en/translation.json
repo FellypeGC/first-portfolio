@@ -95,5 +95,11 @@
     "success": "Your email was sent successfully. I will get back to you soon!",
     "errorDefault": "Failed to send email. Please try again.",
     "errorFixEmail": "Please fix the email address before sending."
+  },
+  "notFound": {
+    "code": "404_PAGE_NOT_FOUND",
+    "title": "Page not found",
+    "description": "The route you are looking for doesn't exist, was removed, or is temporarily unavailable.",
+    "button": "Return to Home"
   }
 }

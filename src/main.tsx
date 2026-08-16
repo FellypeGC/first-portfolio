@@ -6,9 +6,10 @@ import App from './App.tsx'
 import "./i18n.ts";
 import Home from './pages/Home.tsx'
 import Projects from './pages/Projects.tsx'
-import NotFound from './pages/NotFound.tsx'
 import Contact from './pages/Contact.tsx'
 import Skills from './pages/Skills.tsx'
+import NotFound from './pages/NotFound.tsx'
+
 
 const router = createBrowserRouter([
   {

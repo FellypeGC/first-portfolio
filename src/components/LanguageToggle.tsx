@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-export const LanguageToggle = () => {
+const LanguageToggle = () => {
   const { i18n } = useTranslation();
 
   const toggleLanguage = () => {
@@ -22,3 +22,5 @@ export const LanguageToggle = () => {
     </button>
   );
 };
+
+export default LanguageToggle;

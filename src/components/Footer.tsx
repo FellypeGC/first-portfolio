@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import logo from "../assets/code-icon-white.svg";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
-export const Footer = () => {
+const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer className="w-full border-t border-white/10 bg-[#121318] backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <div className="max-w-7xl h-full mx-auto p-4 sm:px-6 lg:px-8 sm:h-16 flex flex-col sm:flex-row items-center justify-between gap-4">
         <Link to="/">
           <div className="flex gap-2.5 items-center">
             <div className="rounded-[7px] flex justify-center items-center p-1">
@@ -49,3 +49,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;
