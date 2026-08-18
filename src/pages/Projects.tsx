@@ -8,7 +8,7 @@ const Projects = () => {
   const projectsData = useProjectsData();
 
   return (
-    <section className="text-white max-w-7xl mx-auto w-full px-6 py-8 md:py-12 flex flex-col gap-8">
+    <section className="text-white max-w-7xl min-h-screen mx-auto w-full px-6 py-8 md:py-12 flex flex-col gap-8">
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 border-b border-white/5 pb-4">
         <div className="flex flex-col gap-2">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
