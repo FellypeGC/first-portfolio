@@ -14,7 +14,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           <img
             src={project.imageUrl}
             alt={project.title}
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-linear-to-t from-[#121318] via-transparent to-transparent opacity-60" />
         </div>
@@ -37,7 +37,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             {project.title}
           </h3>
 
-          <p className="text-sm text-slate-400 leading-relaxed line-clamp-3">
+          <p className="text-sm text-slate-400 leading-relaxed line-clamp-3" title={project.description} aria-description={project.description}>
             {project.description}
           </p>
         </div>
