@@ -7,7 +7,10 @@ import LanguageToggle from "./LanguageToggle";
 
 
 const Navbar = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isPortuguese = i18n.language?.startsWith("pt");
+  const resumeUrl = isPortuguese ? "/curriculo-fgc.pdf" : "/resume-fgc.pdf";
+  const resumeFileName = isPortuguese ? "curriculo-fgc.pdf" : "resume-fgc.pdf";
 
   const navigationLinks = [
     { name: t("nav.home"), path: "/" },
@@ -40,12 +43,12 @@ const Navbar = () => {
             </ul>
             <LanguageToggle />
             <a
-              href="/public/resume-fgc.pdf"
-              download="resume.pdf"
+              href={`/public/${resumeUrl}`}
+              download={resumeFileName}
               className="flex items-center gap-1 px-4 py-2 bg-blue-700 cursor-pointer text-sm font-bold rounded-[7px] transition-all duration-150 hover:opacity-90 hover:shadow-[0_0_15px_rgba(37,106,244,0.6)] hover:border-[rgba(37,106,244,0.8)] hover:scale-[0.98]"
             >
               <MdOutlineFileDownload className="text-xl" />
-              resume.pdf
+              {t("nav.resume")}
             </a>
           </div>
         </nav>
@@ -77,12 +80,12 @@ const Navbar = () => {
           <LanguageToggle />
           <div>
             <a
-              href="/public/resume-fgc.pdf"
-              download="resume.pdf"
+              href={`/public/${resumeUrl}`}
+              download={resumeFileName}
               className="w-full justify-center flex items-center gap-1 px-4 py-3 bg-blue-700 cursor-pointer text-sm font-bold rounded-[7px] transition-all duration-150 hover:opacity-90"
             >
               <MdOutlineFileDownload className="text-xl" />
-              resume.pdf
+              {t("nav.resume")}
             </a>
           </div>
         </div>
