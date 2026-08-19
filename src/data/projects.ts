@@ -27,7 +27,7 @@ export const useProjectsData = (): Project[] => {
       title: "<CloneReserva />",
       description: t("projects.cloneReserva.description"),
       imageUrl: "https://app.netlify.com/.netlify/images?url=https://d33wubrfki0l68.cloudfront.net/682359393700750bc6cd6bfd/screenshot_2025-05-13-14-37-56-0000.webp&fit=cover&h=500&q=40&w=800",
-      tags: ["NEXT.JS 15", "TAILWIND CSS", "TYPESCRIPT"],
+      tags: ["HTML", "SASS", "JavaScript"],
       demoUrl: "https://clone-reserva.netlify.app/",
       githubUrl: "https://github.com/FellypeGC/clone-reserva",
     },
