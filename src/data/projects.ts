@@ -21,7 +21,7 @@ export const useProjectsData = (): Project[] => {
       tags: ["React 19", "TypeScript", "Tailwind CSS"],
       demoUrl: "https://habittrack-eight.vercel.app/",
       githubUrl: "https://github.com/FellypeGC/HabitTrack",
-      imageUrl: "../../public/habit-track.png",
+      imageUrl: "/public/habit-track.png",
     },
     {
       id: "3", 
