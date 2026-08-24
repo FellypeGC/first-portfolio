@@ -62,6 +62,9 @@
     "habitTrack": {
       "description": "A habit-tracking application designed to help users build consistency through daily check-ins, visual stats, and localized persistent data logic."
     },
+    "quintoSet": {
+      "description": "Platform for the Quinto Set social volleyball school in Cesarão with free enrollment, lead management and admin panel with 15-min inactivity security."
+    },
     "vaultEngine": {
       "description": "A robust API for data control and authentication."
     },

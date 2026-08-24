@@ -62,6 +62,9 @@
     "habitTrack": {
       "description": "Uma aplicação de rastreamento de hábitos projetada para ajudar usuários a construir consistência por meio de check-ins diários, estatísticas visuais e lógica de dados persistentes locais."
     },
+    "quintoSet": {
+      "description": "Plataforma da escolinha social de vôlei Quinto Set no Cesarão com matrícula gratuita, gestão de leads e painel admin com segurança de 15 min de inatividade."
+    },
     "vaultEngine": {
       "description": "Uma API robusta para controle de dados e autenticação."
     },

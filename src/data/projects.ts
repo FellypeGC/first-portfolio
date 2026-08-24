@@ -6,6 +6,15 @@ export const useProjectsData = (): Project[] => {
 
   return [
     {
+      id: "2",
+      title: "<QuintoSet />",
+      description: t("projects.quintoSet.description"),
+      imageUrl: "/quinto-set.png",
+      tags: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS", "Drizzle ORM"],
+      demoUrl: "https://quintoset.vercel.app",
+      githubUrl: "https://github.com/fggresuniaosepetiba/quinto-set",
+    },
+    {
       id: "1",
       title: "<HabitTrack />",
       description: t("projects.habitTrack.description"),
@@ -13,14 +22,6 @@ export const useProjectsData = (): Project[] => {
       demoUrl: "https://habittrack-eight.vercel.app/",
       githubUrl: "https://github.com/FellypeGC/HabitTrack",
       imageUrl: "../../public/habit-track.png",
-    },
-    {
-      id: "2",
-      title: "<VaultEngine />",
-      description: t("projects.vaultEngine.description"),
-      imageUrl: "https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?q=80&w=1000&auto=format&fit=crop",
-      tags: ["Node.js", "PostgreSQL", "TypeScript", "Docker"],
-      githubUrl: "https://github.com",
     },
     {
       id: "3", 
