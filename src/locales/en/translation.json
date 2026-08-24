@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "home": "Home",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+    "resume": "resume.pdf"
+  },
+  "home": {
+    "roleTitle": "Software",
+    "roleHighlight": "Developer",
+    "bio": "Hello, World! I'm a Software Developer focused on turning ideas into reality by building reliable, scalable, and custom applications with AI-powered tools.",
+    "viewProjects": "View Projects",
+    "githubProfile": "GitHub Profile"
+  },
+  "terminal": {
+    "title": "Developer.ts — Visual Studio Code",
+    "role": "Software Developer",
+    "status": "Building the future"
+  },
+  "skills": {
+    "tagline": "Engineering Mindset",
+    "title": "Technical Expertise",
+    "description1": "I'm currently building robust software infrastructures that scale. My approach combines clean code principles, full type safety, and AI-assisted workflows with a relentless focus on the end-user experience.",
+    "description2": "An overview of the technologies, frameworks, and tools I use to build end-to-end applications.",
+    "categories": {
+      "languagesFrameworks": "Languages & Frameworks",
+      "backendDatabases": "Backend & Databases",
+      "testingDevOps": "Testing, DevOps & Tools"
+    },
+    "cards": {
+      "fullstack": {
+        "title": "Full-Stack Software Engineering",
+        "description": "Designing and building end-to-end software solutions by combining clean code, modern frontend interfaces, and scalable backend architectures."
+      },
+      "database": {
+        "title": "Database Systems & Data Modeling",
+        "description": "Designing, modeling, and managing relational (SQL) and NoSQL databases, focusing on data integrity, efficient indexing, and ORM integration."
+      },
+      "architecture": {
+        "title": "Software Architecture",
+        "description": "Designing and implementing scalable software solutions with a focus on maintainability, SOLID principles, and system performance."
+      },
+      "testing": {
+        "title": "Automated Testing",
+        "description": "Writing and maintaining tests to ensure code quality and reliability with unit, integration, and E2E testing strategies."
+      },
+      "uiux": {
+        "title": "UI/UX Design & Styling",
+        "description": "Creating beautiful and functional user interfaces with a focus on usability, accessibility, and modern aesthetics."
+      },
+      "ai": {
+        "title": "AI-Assisted Development",
+        "description": "Leveraging AI tools such as ChatGPT, DeepSeek, Gemini, OpenCode and techniques to enhance the development process, from code generation to automated testing and optimization."
+      }
+    }
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A selection of my recent engineering challenges and solutions.",
+    "viewAll": "View all projects",
+    "habitTrack": {
+      "description": "A habit-tracking application designed to help users build consistency through daily check-ins, visual stats, and localized persistent data logic."
+    },
+    "quintoSet": {
+      "description": "Platform for the Quinto Set social volleyball school in Cesarão with free enrollment, lead management and admin panel with 15-min inactivity security."
+    },
+    "vaultEngine": {
+      "description": "A robust API for data control and authentication."
+    },
+    "cloneReserva": {
+      "description": "An e-commerce storefront clone focused on layout replication, interactive component design, dynamic product catalogs, and responsive UX."
+    },
+    "overmatch": {
+      "description": "An institutional landing page built for an English learning academy, featuring course previews, modern layout structuring, and fast performance."
+    }
+  },
+  "contact": {
+    "title": "Ready to build something",
+    "titleHighlight": "extraordinary?",
+    "subtitle": "Whether you have a specific project in mind or need a developer for your team, let's connect and build something extraordinary together.",
+    "labels": {
+      "website_url": "Do not fill this field",
+      "name": "IDENTITY (NAME)",
+      "email": "ORIGIN (EMAIL)",
+      "subject": "SUBJECT (TOPIC)",
+      "message": "MESSAGE"
+    },
+    "placeholders": {
+      "name": "John Doe",
+      "email": "john@domain.com",
+      "subject": "Job Opportunity / Freelance Project / Inquiry",
+      "message": "System/job description..."
+    },
+    "verifyingDomain": "Verifying domain...",
+    "button": "SEND COMMAND",
+    "sending": "SENDING EMAIL...",
+    "success": "Your email was sent successfully. I will get back to you soon!",
+    "errorDefault": "Failed to send email. Please try again.",
+    "errorFixEmail": "Please fix the email address before sending."
+  },
+  "notFound": {
+    "code": "404_PAGE_NOT_FOUND",
+    "title": "Page not found",
+    "description": "The route you are looking for doesn't exist, was removed, or is temporarily unavailable.",
+    "button": "Return to Home"
+  }
+}
