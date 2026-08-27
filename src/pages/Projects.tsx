@@ -23,7 +23,7 @@ const Projects = () => {
           href="https://github.com/FellypeGC?tab=repositories"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 text-sm font-semibold text-slate-300 hover:text-white transition-colors group self-start sm:self-auto px-3 py-1.5 rounded-lg hover:bg-white/5"
+          className="nav-link-animated text-sm font-semibold flex items-center gap-1 group self-start sm:self-auto"
         >
           {t("projects.viewAll")}
           <ArrowUpRight className="w-4 h-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />

@@ -13,8 +13,10 @@ const Home = () => {
 
   return (
     <section className="text-white max-w-7xl w-full mx-auto px-6 lg:px-8 py-10 md:py-16 lg:py-20 flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-14 min-h-[calc(100vh-4.5rem)]">
-      <div className="flex flex-col w-full lg:w-[520px] shrink-0 gap-6 md:gap-7">
-        <StatusBadge isAvailable={isAvailable} companyName={enterpriseOrCompany} />
+      <div className="flex flex-col items-start w-full lg:w-[520px] shrink-0 gap-6 md:gap-7">
+        <div className="self-start w-fit">
+          <StatusBadge isAvailable={isAvailable} companyName={enterpriseOrCompany} />
+        </div>
         <div className="flex flex-col gap-4">
           <h1 className="text-[2.5rem] sm:text-5xl lg:text-[4.2rem] font-bold tracking-[-0.03em] leading-[0.95] max-w-[14ch]">
             {t("home.roleTitle")}{" "}

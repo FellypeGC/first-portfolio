@@ -39,18 +39,10 @@ const Footer = () => {
             <FaLinkedin className="w-4 h-4" />
             <span className="hidden sm:inline">LinkedIn</span>
           </a>
-          <a
-            href="mailto:fellypegc@outlook.com"
-            className="hidden sm:inline-flex items-center gap-1.5 hover:text-white transition-colors px-2.5 py-1.5 rounded-lg hover:bg-white/5"
-          >
-            Email
-          </a>
         </div>
 
-        <div className="text-xs text-slate-500 text-right flex items-center gap-2">
+        <div className="text-xs text-slate-500 text-right">
           <span>© {currentYear} fllpdev</span>
-          <span className="hidden sm:inline text-white/10">•</span>
-          <span className="hidden sm:inline">Built with React + TypeScript</span>
         </div>
 
       </div>

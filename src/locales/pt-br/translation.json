@@ -21,8 +21,8 @@
   "skills": {
     "tagline": "Mentalidade de Engenharia",
     "title": "Expertise Técnica",
-    "description1": "Construo software robusto que escala — combinando código limpo, tipagem ponta a ponta e fluxos com IA, sempre com foco no usuário final.",
-    "description2": "Visão geral das tecnologias, frameworks e ferramentas que uso para entregar produtos ponta a ponta.",
+    "description1": "Atualmente construo infraestruturas de software robustas e escaláveis. Minha abordagem combina princípios de código limpo, tipagem estática ponta a ponta e fluxos com IA, focando sempre na experiência do usuário.",
+    "description2": "Uma visão geral das tecnologias, frameworks e ferramentas que utilizo para construir aplicações ponta a ponta.",
     "categories": {
       "languagesFrameworks": "Linguagens & Frameworks",
       "backendDatabases": "Backend & Bancos de Dados",
@@ -31,27 +31,27 @@
     "cards": {
       "fullstack": {
         "title": "Engenharia de Software Full-Stack",
-        "description": "Soluções ponta a ponta — frontends React/Next.js com APIs escaláveis em Node.js / ASP.NET Core."
+        "description": "Projetando e construindo soluções de software ponta a ponta combinando código limpo, interfaces frontend modernas e arquiteturas backend escaláveis."
       },
       "database": {
         "title": "Sistemas de Banco de Dados & Modelagem",
-        "description": "Modelagem relacional e NoSQL com foco em integridade, indexação e ORMs (Drizzle, EF Core, Prisma)."
+        "description": "Projetando, modelando e gerenciando bancos relacionais (SQL) e NoSQL, com foco na integridade dos dados, indexação eficiente e integração com ORMs."
       },
       "architecture": {
         "title": "Arquitetura de Software",
-        "description": "SOLID, manutenibilidade e performance em primeiro lugar — sistemas fáceis de evoluir e escalar."
+        "description": "Projetando e implementando soluções escaláveis com foco em manutenibilidade, princípios SOLID e performance de sistema."
       },
       "testing": {
         "title": "Testes Automatizados",
-        "description": "Cobertura unitária, integração e E2E com Vitest, xUnit e Playwright para garantir qualidade e confiança."
+        "description": "Escrevendo e mantendo testes para garantir qualidade e confiabilidade de código através de estratégias unitárias, de integração e E2E."
       },
       "uiux": {
         "title": "Design UI/UX & Estilização",
-        "description": "Interfaces funcionais e acessíveis com Tailwind CSS e shadcn/ui — modernas, rápidas e consistentes."
+        "description": "Criando interfaces de usuário bonitas e funcionais com foco em usabilidade, acessibilidade e estética moderna."
       },
       "ai": {
         "title": "Desenvolvimento Assistido por IA",
-        "description": "Uso de IA (ChatGPT, Gemini, OpenCode) para acelerar código, testes e documentação sem perder qualidade."
+        "description": "Utilizando ferramentas como ChatGPT, DeepSeek, Gemini, OpenCode e técnicas avançadas para otimizar o ciclo de desenvolvimento, da geração de código a testes automatizados."
       }
     }
   },
