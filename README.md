@@ -1,73 +1,114 @@
-# React + TypeScript + Vite
+# fllpdev — Software Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <a href="#english"><img alt="English" src="https://img.shields.io/badge/English-0A0B10?style=for-the-badge&logo=github&logoColor=white&labelColor=256AF4"></a>
+  <a href="#português"><img alt="Português" src="https://img.shields.io/badge/Português-0A0B10?style=for-the-badge&logo=github&logoColor=white&labelColor=256AF4"></a>
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  <a href="https://fllpdev.vercel.app">Live</a> · <a href="https://linkedin.com/in/fllpdev">LinkedIn</a> · <a href="https://github.com/FellypeGC">GitHub</a>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## English
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+Portfolio of **Fellype Gabriel** — Software Developer focused on React, TypeScript, Node.js and PostgreSQL. Featured projects: **Quinto Set** (Next.js + Drizzle) and **HabitTrack** (React 19).
 
-## Expanding the ESLint configuration
+### Stack
+React 19 · TypeScript · Vite 7 · Tailwind CSS 4 · React Router 7 · i18next (EN/PT) · EmailJS
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Arquitetura - Modular SPA
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+first-portfolio/
+├── public/                 # static assets (resume PDF, screenshots)
+│   ├── resume-fgc.pdf
+│   ├── curriculo-fgc.pdf
+│   ├── habit-track.png
+│   └── quinto-set.png
+├── src/
+│   ├── assets/             # code-icon-*.svg
+│   ├── components/         # Header, Navbar, Footer, TerminalCard, ProjectCard, SkillCard, StatusBadge, LanguageToggle
+│   ├── data/               # projects.ts, skills.tsx, blocked-domains.ts
+│   ├── locales/            # en/translation.json, pt-br/translation.json
+│   ├── models/             # project-model.ts, skill-model.ts
+│   ├── pages/              # Home.tsx, Projects.tsx, Skills.tsx, Contact.tsx, NotFound.tsx
+│   ├── utils/              # tag-styles.ts
+│   ├── App.tsx             # layout: Header + Outlet + Footer + ScrollToTop
+│   ├── main.tsx            # Router (lazy + Suspense) + i18n
+│   ├── i18n.ts             # i18next + LanguageDetector + html lang sync
+│   └── index.css           # Tailwind + @theme (brand/surface) + utilities
+├── index.html              # SEO: title, description, OG/Twitter, JSON-LD, canonical
+├── vercel.json             # SPA rewrites + cleanUrls + cache headers
+├── vite.config.ts
+└── .github/workflows/main.yml  # CI Node 20: lint + build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+| Path | Description |
+|---|---|
+| `src/pages/` | Main routes (`/` `/projects` `/skills` `/contact` `*`) |
+| `src/components/` | Reusable UI (cards, header, terminal) |
+| `src/data/` | Decoupled content (projects & skills use `t()` from i18n) |
+| `src/locales/` | EN/PT translations (projects, skills, home, contact) |
+| `src/utils/tag-styles.ts` | Tag colors by technology |
+| `public/` | PDFs and images served as static |
+| `vercel.json` | SPA fallback + asset caching |
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Deploy
+Vercel (SPA fallback in `vercel.json`). CI in `.github/workflows/main.yml` (Node 20, lint + build).
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Polishing Branch
+`feat/polish-linkedin` — core layout intact + SEO + original copy EN/PT. Automatic preview on Vercel.
+
+---
+
+## Português
+
+Portfólio de **Fellype Gabriel** — Software Developer focado em React, TypeScript, Node.js e PostgreSQL. Projetos em destaque: **Quinto Set** (Next.js + Drizzle) e **HabitTrack** (React 19).
+
+### Stack
+React 19 · TypeScript · Vite 7 · Tailwind CSS 4 · React Router 7 · i18next (PT/EN) · EmailJS
+
+### Arquitetura - Modular SPA
+
 ```
+first-portfolio/
+├── public/                 # assets estáticos (resume/curriculo PDF, prints)
+│   ├── resume-fgc.pdf
+│   ├── curriculo-fgc.pdf
+│   ├── habit-track.png
+│   └── quinto-set.png
+├── src/
+│   ├── assets/             # code-icon-*.svg
+│   ├── components/         # Header, Navbar, Footer, TerminalCard, ProjectCard, SkillCard, StatusBadge, LanguageToggle
+│   ├── data/               # projects.ts, skills.tsx, blocked-domains.ts
+│   ├── locales/            # en/translation.json, pt-br/translation.json
+│   ├── models/             # project-model.ts, skill-model.ts
+│   ├── pages/              # Home.tsx, Projects.tsx, Skills.tsx, Contact.tsx, NotFound.tsx
+│   ├── utils/              # tag-styles.ts
+│   ├── App.tsx             # layout Header + Outlet + Footer + ScrollToTop
+│   ├── main.tsx            # Router (lazy + Suspense) + i18n
+│   ├── i18n.ts             # i18next + LanguageDetector + html lang sync
+│   └── index.css           # Tailwind + @theme (brand/surface) + utilities
+├── index.html              # SEO: title, description, OG/Twitter, JSON-LD, canonical
+├── vercel.json             # SPA rewrites + cleanUrls + cache headers
+├── vite.config.ts
+└── .github/workflows/main.yml  # CI Node 20: lint + build
+```
+
+| Caminho | Descrição |
+|---|---|
+| `src/pages/` | Rotas principais (`/` `/projects` `/skills` `/contact` `*`) |
+| `src/components/` | UI reutilizável (cards, header, terminal) |
+| `src/data/` | Conteúdo desacoplado (projetos e skills consomem `t()` do i18n) |
+| `src/locales/` | Traduções PT/EN (projetos, skills, home, contact) |
+| `src/utils/tag-styles.ts` | Cores das tags por tecnologia |
+| `public/` | PDFs e imagens servidas como estático |
+| `vercel.json` | Fallback SPA + cache de assets |
+
+### Deploy
+Vercel (SPA fallback em `vercel.json`). CI em `.github/workflows/main.yml` (Node 20, lint + build).
+
+### Branch de polimento
+`feat/polish-linkedin` — layout core intacto + SEO + copy original PT/EN. Preview automático na Vercel.

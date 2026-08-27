@@ -4,7 +4,7 @@ const TerminalCard = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="relative terminal-glow w-100 max-w-full md:max-w-full  sm:max-w-md md:w-120">
+    <div className="relative terminal-glow w-100 max-w-full md:max-w-full sm:max-w-md md:w-120">
       <div className="bg-[#1f242d] rounded-xl border-b border-white/5 overflow-hidden">
         <div className="flex gap-4 px-4 py-3 items-center justify-between">
           <div className="flex gap-2">

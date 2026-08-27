@@ -17,12 +17,12 @@ const Footer = () => {
             <h1 className="text-2xl font-semibold">fllpdev.ts</h1>
           </div>
         </Link>
-        <div className="flex items-center gap-4 text-xs font-semibold text-slate-400">
+        <div className="flex items-center gap-1 text-xs font-semibold text-slate-400">
           <a
             href="https://github.com/FellypeGC"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-1.5 hover:text-white transition-colors p-1.5 rounded-md hover:bg-white/5"
+            className="flex items-center gap-1.5 hover:text-white transition-colors px-2.5 py-1.5 rounded-lg hover:bg-white/5"
             aria-label="GitHub"
           >
             <FaGithub className="w-4 h-4" />
@@ -33,7 +33,7 @@ const Footer = () => {
             href="https://linkedin.com/in/fllpdev"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-1.5 hover:text-white transition-colors p-1.5 rounded-md hover:bg-white/5"
+            className="flex items-center gap-1.5 hover:text-white transition-colors px-2.5 py-1.5 rounded-lg hover:bg-white/5"
             aria-label="LinkedIn"
           >
             <FaLinkedin className="w-4 h-4" />

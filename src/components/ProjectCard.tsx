@@ -8,15 +8,19 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <div className="bg-[#121318] border border-white/10 rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 hover:border-white/20 hover:-translate-y-1.5 group">
+    <div className="bg-[#121318] border border-white/10 rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 hover:border-white/20 hover:-translate-y-1.5 group cursor-pointer isolate">
       <div>
-        <div className="relative w-full h-48 overflow-hidden bg-white/5">
+        <div className="relative w-full h-48 overflow-hidden bg-[#121318] rounded-t-2xl [transform:translateZ(0)]">
           <img
             src={project.imageUrl}
-            alt={project.title}
-            className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+            alt={`${project.title} preview`}
+            loading="lazy"
+            decoding="async"
+            width={800}
+            height={450}
+            className="block w-[calc(100%+2px)] h-[calc(100%+2px)] -m-px object-cover object-top transition-transform duration-500 will-change-transform transform-gpu backface-hidden group-hover:scale-[1.03] origin-top"
           />
-          <div className="absolute inset-0 bg-linear-to-t from-[#121318] via-transparent to-transparent opacity-60" />
+          <div className="absolute inset-0 bg-linear-to-t from-[#121318] via-transparent to-transparent opacity-60 pointer-events-none" />
         </div>
 
         <div className="p-6 flex flex-col gap-4">
@@ -37,7 +41,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             {project.title}
           </h3>
 
-          <p className="text-sm text-slate-400 leading-relaxed line-clamp-3" title={project.description} aria-description={project.description}>
+          <p className="text-sm text-slate-400 leading-relaxed" title={project.description} aria-description={project.description}>
             {project.description}
           </p>
         </div>
