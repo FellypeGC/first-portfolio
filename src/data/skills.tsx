@@ -38,9 +38,9 @@ export const useTechCategories = (): TechCategory[] => {
         "EF Core",
         "MongoDB",
         "Express",
+        "JWT Auth",
         "REST APIs",
         "PostgreSQL",
-        "JWT Auth",
       ],
     },
     {
