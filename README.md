@@ -18,7 +18,7 @@ Portfolio of **Fellype Gabriel** — Software Developer focused on React, TypeSc
 ### Stack
 React 19 · TypeScript · Vite 7 · Tailwind CSS 4 · React Router 7 · i18next (EN/PT) · EmailJS
 
-### Architecture
+### Arquitetura - Modular SPA
 
 ```
 first-portfolio/
@@ -70,7 +70,7 @@ Portfólio de **Fellype Gabriel** — Software Developer focado em React, TypeSc
 ### Stack
 React 19 · TypeScript · Vite 7 · Tailwind CSS 4 · React Router 7 · i18next (PT/EN) · EmailJS
 
-### Arquitetura
+### Arquitetura - Modular SPA
 
 ```
 first-portfolio/
