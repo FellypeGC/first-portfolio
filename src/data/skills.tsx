@@ -51,10 +51,10 @@ export const useTechCategories = (): TechCategory[] => {
         "Playwright",
         "xUnit",
         "Docker",
+        "Figma",
         "Git/GitHub Actions",
         "Vercel/Railway",
         "shadcn/ui",
-        "Figma",
       ],
     },
   ];
