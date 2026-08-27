@@ -4,12 +4,12 @@
     "skills": "Skills",
     "projects": "Projects",
     "contact": "Contact",
-    "resume": "resume.pdf"
+    "resume": "Resume"
   },
   "home": {
     "roleTitle": "Software",
     "roleHighlight": "Developer",
-    "bio": "Hello, World! I'm a Software Developer focused on turning ideas into reality by building reliable, scalable, and custom applications with AI-powered tools.",
+    "bio": "Hello, World! I'm a Software Developer turning ideas into reliable, scalable applications — from clean React interfaces to solid Node.js and PostgreSQL backends, with a focus on clean code and great UX.",
     "viewProjects": "View Projects",
     "githubProfile": "GitHub Profile"
   },
@@ -21,8 +21,8 @@
   "skills": {
     "tagline": "Engineering Mindset",
     "title": "Technical Expertise",
-    "description1": "I'm currently building robust software infrastructures that scale. My approach combines clean code principles, full type safety, and AI-assisted workflows with a relentless focus on the end-user experience.",
-    "description2": "An overview of the technologies, frameworks, and tools I use to build end-to-end applications.",
+    "description1": "I build robust software that scales — combining clean code, end-to-end type safety and AI-assisted workflows, always with the end user in mind.",
+    "description2": "An overview of the technologies, frameworks and tools I use to ship end-to-end products.",
     "categories": {
       "languagesFrameworks": "Languages & Frameworks",
       "backendDatabases": "Backend & Databases",
@@ -31,48 +31,48 @@
     "cards": {
       "fullstack": {
         "title": "Full-Stack Software Engineering",
-        "description": "Designing and building end-to-end software solutions by combining clean code, modern frontend interfaces, and scalable backend architectures."
+        "description": "End-to-end solutions — clean React/Next.js frontends paired with scalable Node.js / ASP.NET Core APIs."
       },
       "database": {
         "title": "Database Systems & Data Modeling",
-        "description": "Designing, modeling, and managing relational (SQL) and NoSQL databases, focusing on data integrity, efficient indexing, and ORM integration."
+        "description": "Relational and NoSQL modeling with focus on integrity, indexing and ORM integration (Drizzle, EF Core, Prisma)."
       },
       "architecture": {
         "title": "Software Architecture",
-        "description": "Designing and implementing scalable software solutions with a focus on maintainability, SOLID principles, and system performance."
+        "description": "SOLID, maintainability and performance first — building systems that are easy to evolve and scale."
       },
       "testing": {
         "title": "Automated Testing",
-        "description": "Writing and maintaining tests to ensure code quality and reliability with unit, integration, and E2E testing strategies."
+        "description": "Unit, integration and E2E coverage with Vitest, xUnit and Playwright to keep quality and confidence high."
       },
       "uiux": {
         "title": "UI/UX Design & Styling",
-        "description": "Creating beautiful and functional user interfaces with a focus on usability, accessibility, and modern aesthetics."
+        "description": "Functional, accessible interfaces with Tailwind CSS and shadcn/ui — modern, fast and consistent."
       },
       "ai": {
         "title": "AI-Assisted Development",
-        "description": "Leveraging AI tools such as ChatGPT, DeepSeek, Gemini, OpenCode and techniques to enhance the development process, from code generation to automated testing and optimization."
+        "description": "Using AI (ChatGPT, Gemini, OpenCode) to accelerate coding, testing and documentation without compromising quality."
       }
     }
   },
   "projects": {
     "title": "Featured Projects",
-    "subtitle": "A selection of my recent engineering challenges and solutions.",
+    "subtitle": "A selection of recent builds — real problems, shipped solutions.",
     "viewAll": "View all projects",
     "habitTrack": {
-      "description": "A habit-tracking application designed to help users build consistency through daily check-ins, visual stats, and localized persistent data logic."
+      "description": "Habit tracker with daily check-ins, streak stats and local persistence — built with React 19, TypeScript and Tailwind for a fast, offline-first UX."
     },
     "quintoSet": {
-      "description": "Platform for the Quinto Set social volleyball school in Cesarão with free enrollment, lead management and admin panel with 15-min inactivity security."
+      "description": "Full platform for Quinto Set volleyball school (Cesarão): free enrollment, lead management and secure admin panel with 15-min inactivity lock — Next.js 15 + PostgreSQL + Drizzle."
     },
     "vaultEngine": {
       "description": "A robust API for data control and authentication."
     },
     "cloneReserva": {
-      "description": "An e-commerce storefront clone focused on layout replication, interactive component design, dynamic product catalogs, and responsive UX."
+      "description": "Responsive e-commerce storefront clone — layout replication, interactive components and dynamic catalog with clean, mobile-first UX."
     },
     "overmatch": {
-      "description": "An institutional landing page built for an English learning academy, featuring course previews, modern layout structuring, and fast performance."
+      "description": "Institutional landing for an English academy — course previews, modern layout and optimized performance for conversion."
     }
   },
   "contact": {

@@ -12,46 +12,44 @@ const Home = () => {
   const enterpriseOrCompany: string = "?";
 
   return (
-    <section className="text-white flex justify-center items-center gap-4 sm:gap-6 md:gap-12 min-h-screen p-6 md:py-20 md:flex-row md:px-20 max-w-7xl w-full mx-auto flex-wrap">
-      <div className="flex flex-col w-100 max-w-full md:w-120 md:h-100 gap-6">
-        {/* If: Available for Hire ? Available for hire : Currently working at [enterprise/company name] */}
-        <span>
-          <StatusBadge
-            isAvailable={isAvailable}
-            companyName={enterpriseOrCompany}
-          />
-        </span>
-        <h1 className="text-5xl md:text-7xl font-bold tracking-tight max-w-md">
-          {t("home.roleTitle")}{" "}
-          <span className="text-[rgb(37,106,244)] text-glow">{t("home.roleHighlight")}</span>
-        </h1>
-        <p className="md:text-md text-slate-400">
-          {t("home.bio")}
-        </p>
+    <section className="text-white max-w-7xl w-full mx-auto px-6 lg:px-8 py-10 md:py-16 lg:py-20 flex flex-col lg:flex-row items-center justify-center gap-10 lg:gap-14 min-h-[calc(100vh-4.5rem)]">
+      <div className="flex flex-col w-full lg:w-[520px] shrink-0 gap-6 md:gap-7">
+        <StatusBadge isAvailable={isAvailable} companyName={enterpriseOrCompany} />
+        <div className="flex flex-col gap-4">
+          <h1 className="text-[2.5rem] sm:text-5xl lg:text-[4.2rem] font-bold tracking-[-0.03em] leading-[0.95] max-w-[14ch]">
+            {t("home.roleTitle")}{" "}
+            <span className="text-[rgb(37,106,244)] text-glow">{t("home.roleHighlight")}</span>
+          </h1>
+          <p className="text-[15px] md:text-base text-slate-400 leading-relaxed max-w-[52ch]">
+            {t("home.bio")}
+          </p>
+        </div>
 
-        <div className="flex gap-4 pt-2">
+        <div className="flex flex-wrap gap-3 pt-1">
           <Link
             to="/projects"
-            className="flex items-center justify-center w-40 h-14 text-white cursor-pointer text-sm font-bold text-center bg-[rgb(37,106,244)] rounded-[10px] outline-none border-none transition-all duration-200 ease-in-out delay-0 hover:opacity-90 hover:scale-[0.95]"
+            className="inline-flex items-center justify-center gap-1.5 h-12 px-6 text-white text-sm font-bold bg-blue-600 hover:bg-blue-500 rounded-xl transition-all duration-200 hover:scale-[0.98] active:scale-[0.97] shadow-lg shadow-blue-600/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0B10]"
           >
             {t("home.viewProjects")}
-            <ArrowRight className="ml-1 w-4" />
+            <ArrowRight className="w-4 h-4" />
           </Link>
 
           <a
             href="https://github.com/FellypeGC"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-40 h-14 text-white cursor-pointer text-base font-bold text-center bg-[#0c0c0c] rounded-[10px] outline-none border border-white/10 transition-all duration-200 ease-in-out delay-0 hover:opacity-90 hover:scale-[0.95]"
+            className="inline-flex items-center justify-center gap-2 h-12 px-6 text-sm font-semibold text-white bg-white/[0.06] hover:bg-white/[0.1] border border-white/10 hover:border-white/20 rounded-xl transition-all duration-200 hover:scale-[0.98] active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20"
           >
-            <FaGithub className="w-4 h-4 mr-2 text-white group-hover:text-white transition-colors" />
+            <FaGithub className="w-4 h-4" />
             {t("home.githubProfile")}
           </a>
         </div>
       </div>
 
       {/* VS Code Terminal Card */}
-      <TerminalCard />
+      <div className="w-full lg:flex-1 flex justify-center lg:justify-end">
+        <TerminalCard />
+      </div>
     </section>
   );
 };

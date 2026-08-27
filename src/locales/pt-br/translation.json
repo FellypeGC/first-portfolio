@@ -4,12 +4,12 @@
     "skills": "Habilidades",
     "projects": "Projetos",
     "contact": "Contato",
-    "resume": "curriculo.pdf"
+    "resume": "Currículo"
   },
   "home": {
     "roleTitle": "Software",
     "roleHighlight": "Developer",
-    "bio": "Olá, mundo! Sou um Desenvolvedor de Software focado em transformar ideias em realidade, construindo aplicações confiáveis, escaláveis e personalizadas com ferramentas impulsionadas por IA.",
+    "bio": "Olá, mundo! Sou Software Developer transformando ideias em aplicações confiáveis e escaláveis — de interfaces React a backends sólidos em Node.js e PostgreSQL, com foco em código limpo e ótima UX.",
     "viewProjects": "Ver Projetos",
     "githubProfile": "Perfil no GitHub"
   },
@@ -21,8 +21,8 @@
   "skills": {
     "tagline": "Mentalidade de Engenharia",
     "title": "Expertise Técnica",
-    "description1": "Atualmente construo infraestruturas de software robustas e escaláveis. Minha abordagem combina princípios de código limpo, tipagem estática ponta a ponta e fluxos com IA, focando sempre na experiência do usuário.",
-    "description2": "Uma visão geral das tecnologias, frameworks e ferramentas que utilizo para construir aplicações ponta a ponta.",
+    "description1": "Construo software robusto que escala — combinando código limpo, tipagem ponta a ponta e fluxos com IA, sempre com foco no usuário final.",
+    "description2": "Visão geral das tecnologias, frameworks e ferramentas que uso para entregar produtos ponta a ponta.",
     "categories": {
       "languagesFrameworks": "Linguagens & Frameworks",
       "backendDatabases": "Backend & Bancos de Dados",
@@ -31,48 +31,48 @@
     "cards": {
       "fullstack": {
         "title": "Engenharia de Software Full-Stack",
-        "description": "Projetando e construindo soluções de software ponta a ponta combinando código limpo, interfaces frontend modernas e arquiteturas backend escaláveis."
+        "description": "Soluções ponta a ponta — frontends React/Next.js com APIs escaláveis em Node.js / ASP.NET Core."
       },
       "database": {
         "title": "Sistemas de Banco de Dados & Modelagem",
-        "description": "Projetando, modelando e gerenciando bancos relacionais (SQL) e NoSQL, com foco na integridade dos dados, indexação eficiente e integração com ORMs."
+        "description": "Modelagem relacional e NoSQL com foco em integridade, indexação e ORMs (Drizzle, EF Core, Prisma)."
       },
       "architecture": {
         "title": "Arquitetura de Software",
-        "description": "Projetando e implementando soluções escaláveis com foco em manutenibilidade, princípios SOLID e performance de sistema."
+        "description": "SOLID, manutenibilidade e performance em primeiro lugar — sistemas fáceis de evoluir e escalar."
       },
       "testing": {
         "title": "Testes Automatizados",
-        "description": "Escrevendo e mantendo testes para garantir qualidade e confiabilidade de código através de estratégias unitárias, de integração e E2E."
+        "description": "Cobertura unitária, integração e E2E com Vitest, xUnit e Playwright para garantir qualidade e confiança."
       },
       "uiux": {
         "title": "Design UI/UX & Estilização",
-        "description": "Criando interfaces de usuário bonitas e funcionais com foco em usabilidade, acessibilidade e estética moderna."
+        "description": "Interfaces funcionais e acessíveis com Tailwind CSS e shadcn/ui — modernas, rápidas e consistentes."
       },
       "ai": {
         "title": "Desenvolvimento Assistido por IA",
-        "description": "Utilizando ferramentas como ChatGPT, DeepSeek, Gemini, OpenCode e técnicas avançadas para otimizar o ciclo de desenvolvimento, da geração de código a testes automatizados."
+        "description": "Uso de IA (ChatGPT, Gemini, OpenCode) para acelerar código, testes e documentação sem perder qualidade."
       }
     }
   },
   "projects": {
     "title": "Projetos em Destaque",
-    "subtitle": "Uma seleção dos meus desafios de engenharia e soluções recentes.",
+    "subtitle": "Seleção de entregas recentes — problemas reais, soluções em produção.",
     "viewAll": "Ver todos os projetos",
     "habitTrack": {
-      "description": "Uma aplicação de rastreamento de hábitos projetada para ajudar usuários a construir consistência por meio de check-ins diários, estatísticas visuais e lógica de dados persistentes locais."
+      "description": "App de hábitos com check-ins diários, estatísticas de sequência e persistência local — React 19, TypeScript e Tailwind com UX rápida e offline-first."
     },
     "quintoSet": {
-      "description": "Plataforma da escolinha social de vôlei Quinto Set no Cesarão com matrícula gratuita, gestão de leads e painel admin com segurança de 15 min de inatividade."
+      "description": "Plataforma completa da escolinha Quinto Set (Cesarão): matrícula gratuita, gestão de leads e painel admin seguro com bloqueio por inatividade de 15 min — Next.js 15 + PostgreSQL + Drizzle."
     },
     "vaultEngine": {
       "description": "Uma API robusta para controle de dados e autenticação."
     },
     "cloneReserva": {
-      "description": "Um clone de storefront de e-commerce focado na replicação de layout, design de componentes interativos, catálogo dinâmico de produtos e UX responsiva."
+      "description": "Clone de e-commerce responsivo — replicação de layout, componentes interativos e catálogo dinâmico com UX mobile-first."
     },
     "overmatch": {
-      "description": "Uma landing page institucional desenvolvida para um curso de inglês, contando com preview de cursos, estruturação de layout moderno e alta performance."
+      "description": "Landing institucional para curso de inglês — preview de cursos, layout moderno e performance otimizada para conversão."
     }
   },
   "contact": {

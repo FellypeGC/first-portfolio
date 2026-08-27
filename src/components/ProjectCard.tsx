@@ -13,7 +13,11 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <div className="relative w-full h-48 overflow-hidden bg-white/5">
           <img
             src={project.imageUrl}
-            alt={project.title}
+            alt={`${project.title} preview`}
+            loading="lazy"
+            decoding="async"
+            width={800}
+            height={450}
             className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-linear-to-t from-[#121318] via-transparent to-transparent opacity-60" />

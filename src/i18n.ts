@@ -25,4 +25,15 @@ i18n
     },
   });
 
+i18n.on("languageChanged", (lng) => {
+  const htmlLang = lng.startsWith("pt") ? "pt-BR" : "en";
+  document.documentElement.lang = htmlLang;
+});
+
+// set initial html lang
+if (typeof document !== "undefined") {
+  const initial = i18n.language?.startsWith("pt") ? "pt-BR" : "en";
+  document.documentElement.lang = initial;
+}
+
 export default i18n;
