@@ -41,7 +41,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             {project.title}
           </h3>
 
-          <p className="text-sm text-slate-400 leading-relaxed line-clamp-3" title={project.description} aria-description={project.description}>
+          <p className="text-sm text-slate-400 leading-relaxed" title={project.description} aria-description={project.description}>
             {project.description}
           </p>
         </div>

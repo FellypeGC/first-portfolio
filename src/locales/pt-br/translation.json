@@ -4,7 +4,7 @@
     "skills": "Habilidades",
     "projects": "Projetos",
     "contact": "Contato",
-    "resume": "Currículo"
+    "resume": "curriculo.pdf"
   },
   "home": {
     "roleTitle": "Software",
@@ -57,22 +57,22 @@
   },
   "projects": {
     "title": "Projetos em Destaque",
-    "subtitle": "Seleção de entregas recentes — problemas reais, soluções em produção.",
+    "subtitle": "Uma seleção dos meus desafios de engenharia e soluções recentes.",
     "viewAll": "Ver todos os projetos",
     "habitTrack": {
-      "description": "App de hábitos com check-ins diários, estatísticas de sequência e persistência local — React 19, TypeScript e Tailwind com UX rápida e offline-first."
+      "description": "Uma aplicação de rastreamento de hábitos projetada para ajudar usuários a construir consistência por meio de check-ins diários, estatísticas visuais e lógica de dados persistentes locais."
     },
     "quintoSet": {
-      "description": "Plataforma completa da escolinha Quinto Set (Cesarão): matrícula gratuita, gestão de leads e painel admin seguro com bloqueio por inatividade de 15 min — Next.js 15 + PostgreSQL + Drizzle."
+      "description": "Plataforma da escolinha social de vôlei Quinto Set no Cesarão com matrícula gratuita, gestão de leads e painel admin com segurança de 15 min de inatividade."
     },
     "vaultEngine": {
       "description": "Uma API robusta para controle de dados e autenticação."
     },
     "cloneReserva": {
-      "description": "Clone de e-commerce responsivo — replicação de layout, componentes interativos e catálogo dinâmico com UX mobile-first."
+      "description": "Um clone de storefront de e-commerce focado na replicação de layout, design de componentes interativos, catálogo dinâmico de produtos e UX responsiva."
     },
     "overmatch": {
-      "description": "Landing institucional para curso de inglês — preview de cursos, layout moderno e performance otimizada para conversão."
+      "description": "Uma landing page institucional desenvolvida para um curso de inglês, contando com preview de cursos, estruturação de layout moderno e alta performance."
     }
   },
   "contact": {

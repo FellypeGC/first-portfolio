@@ -22,7 +22,7 @@ const Skills = () => {
           <p className="text-slate-400 text-[15px] leading-relaxed">
             {t("skills.description1")}
           </p>
-          <p className="text-slate-500 text-sm leading-relaxed">
+          <p className="text-slate-400 text-[15px] leading-relaxed">
             {t("skills.description2")}
           </p>
         </div>

@@ -4,7 +4,7 @@
     "skills": "Skills",
     "projects": "Projects",
     "contact": "Contact",
-    "resume": "Resume"
+    "resume": "resume.pdf"
   },
   "home": {
     "roleTitle": "Software",
@@ -57,22 +57,22 @@
   },
   "projects": {
     "title": "Featured Projects",
-    "subtitle": "A selection of recent builds — real problems, shipped solutions.",
+    "subtitle": "A selection of my recent engineering challenges and solutions.",
     "viewAll": "View all projects",
     "habitTrack": {
-      "description": "Habit tracker with daily check-ins, streak stats and local persistence — built with React 19, TypeScript and Tailwind for a fast, offline-first UX."
+      "description": "A habit-tracking application designed to help users build consistency through daily check-ins, visual stats, and localized persistent data logic."
     },
     "quintoSet": {
-      "description": "Full platform for Quinto Set volleyball school (Cesarão): free enrollment, lead management and secure admin panel with 15-min inactivity lock — Next.js 15 + PostgreSQL + Drizzle."
+      "description": "Platform for the Quinto Set social volleyball school in Cesarão with free enrollment, lead management and admin panel with 15-min inactivity security."
     },
     "vaultEngine": {
       "description": "A robust API for data control and authentication."
     },
     "cloneReserva": {
-      "description": "Responsive e-commerce storefront clone — layout replication, interactive components and dynamic catalog with clean, mobile-first UX."
+      "description": "An e-commerce storefront clone focused on layout replication, interactive component design, dynamic product catalogs, and responsive UX."
     },
     "overmatch": {
-      "description": "Institutional landing for an English academy — course previews, modern layout and optimized performance for conversion."
+      "description": "An institutional landing page built for an English learning academy, featuring course previews, modern layout structuring, and fast performance."
     }
   },
   "contact": {
