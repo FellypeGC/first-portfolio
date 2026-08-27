@@ -33,12 +33,6 @@ body {
   background: rgba(37,106,244,0.35);
 }
 
-/* focus visible */
-:focus-visible {
-  outline: 2px solid rgb(37 106 244);
-  outline-offset: 2px;
-}
-
 @layer components {
   .border-glass {
     border: 1px solid rgba(255, 255, 255, 0.02);
@@ -72,7 +66,7 @@ body {
   }
 
   .terminal-glow {
-    box-shadow: 0 0 28px rgba(37, 106, 244, 0.22), 0 0 45px rgba(37, 106, 244, 0.12);
+    box-shadow: 0 0 20px rgba(37, 106, 244, 0.15);
   }
 
   .text-purple {

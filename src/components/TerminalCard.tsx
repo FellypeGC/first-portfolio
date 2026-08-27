@@ -71,7 +71,7 @@ const TerminalCard = () => {
         </div>
       </div>
 
-      <div className="absolute -z-10 -bottom-6 -right-6 w-full h-full bg-[rgb(37,106,244)]/15 rounded-xl blur-3xl" data-alt="Abstract soft blue glow pattern"></div>
+      <div className="absolute -z-10 -bottom-6 -right-6 w-full h-full bg-[rgb(37,106,244)]/10 rounded-xl blur-3xl" data-alt="Abstract soft blue glow pattern"></div>
     </div>
   )
 }
