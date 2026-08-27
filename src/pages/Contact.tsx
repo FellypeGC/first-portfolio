@@ -182,7 +182,7 @@ const Contact = () => {
               name="user_name"
               required
               placeholder={t("contact.placeholders.name")}
-              className="bg-[#0d1117] border border-white/10 rounded-lg px-4 py-3 text-slate-200 placeholder-slate-600 text-sm focus:outline-none focus:border-blue-500 transition-colors [&:-webkit-autofill]:[-webkit-box-shadow:0_0_0_50px_#0d1117_inset] [&:-webkit-autofill]:[-webkit-text-fill-color:#e2e8f0]"
+              className="bg-[#0d1117] border border-white/10 rounded-lg px-4 py-3 text-slate-200 placeholder-slate-600 text-sm focus:outline-none focus-visible:outline-none focus-visible:border-blue-500 focus:border-blue-500 transition-colors [&:-webkit-autofill]:[-webkit-box-shadow:0_0_0_50px_#0d1117_inset] [&:-webkit-autofill]:[-webkit-text-fill-color:#e2e8f0]"
             />
           </div>
 
@@ -209,12 +209,12 @@ const Contact = () => {
               placeholder={t("contact.placeholders.email")}
               aria-invalid={emailStatus === "invalid"}
               aria-describedby={emailError ? "email-error-msg" : undefined}
-              className={`bg-[#0d1117] border rounded-lg px-4 py-3 text-slate-200 placeholder-slate-600 text-sm focus:outline-none focus:bg-[#0d1117] transition-colors [&:-webkit-autofill]:[-webkit-box-shadow:0_0_0_50px_#0d1117_inset] [&:-webkit-autofill]:[-webkit-text-fill-color:#e2e8f0] ${
+              className={`bg-[#0d1117] border rounded-lg px-4 py-3 text-slate-200 placeholder-slate-600 text-sm focus:outline-none focus-visible:outline-none focus:bg-[#0d1117] transition-colors [&:-webkit-autofill]:[-webkit-box-shadow:0_0_0_50px_#0d1117_inset] [&:-webkit-autofill]:[-webkit-text-fill-color:#e2e8f0] ${
                 emailStatus === "invalid"
                   ? "border-rose-500"
                   : emailStatus === "valid"
                     ? "border-emerald-500"
-                    : "border-white/10 focus:border-blue-500"
+                    : "border-white/10 focus-visible:border-blue-500 focus:border-blue-500"
               }`}
             />
             {emailError && (
@@ -235,14 +235,14 @@ const Contact = () => {
           >
             {t("contact.labels.subject")}
           </label>
-          <input
-            id="subject"
-            type="text"
-            name="subject"
-            required
-            placeholder={t("contact.placeholders.subject")}
-            className="bg-[#0d1117] border border-white/10 rounded-lg px-4 py-3 text-slate-200 placeholder-slate-600 text-sm focus:outline-none focus:border-blue-500 transition-colors [&:-webkit-autofill]:[-webkit-box-shadow:0_0_0_50px_#0d1117_inset] [&:-webkit-autofill]:[-webkit-text-fill-color:#e2e8f0]"
-          />
+            <input
+              id="subject"
+              type="text"
+              name="subject"
+              required
+              placeholder={t("contact.placeholders.subject")}
+              className="bg-[#0d1117] border border-white/10 rounded-lg px-4 py-3 text-slate-200 placeholder-slate-600 text-sm focus:outline-none focus-visible:outline-none focus-visible:border-blue-500 focus:border-blue-500 transition-colors [&:-webkit-autofill]:[-webkit-box-shadow:0_0_0_50px_#0d1117_inset] [&:-webkit-autofill]:[-webkit-text-fill-color:#e2e8f0]"
+            />
         </div>
 
         <div className="flex flex-col gap-2">
@@ -252,14 +252,14 @@ const Contact = () => {
           >
             {t("contact.labels.message")}
           </label>
-          <textarea
-            id="message"
-            name="message"
-            required
-            rows={5}
-            placeholder={t("contact.placeholders.message")}
-            className="bg-[#0d1117] border border-white/10 rounded-lg p-4 text-slate-200 placeholder-slate-600 text-sm focus:outline-none focus:border-blue-500 transition-colors resize-none [&:-webkit-autofill]:[-webkit-box-shadow:0_0_0_50px_#0d1117_inset] [&:-webkit-autofill]:[-webkit-text-fill-color:#e2e8f0]"
-          />
+            <textarea
+              id="message"
+              name="message"
+              required
+              rows={5}
+              placeholder={t("contact.placeholders.message")}
+              className="bg-[#0d1117] border border-white/10 rounded-lg p-4 text-slate-200 placeholder-slate-600 text-sm focus:outline-none focus-visible:outline-none focus-visible:border-blue-500 focus:border-blue-500 transition-colors resize-none [&:-webkit-autofill]:[-webkit-box-shadow:0_0_0_50px_#0d1117_inset] [&:-webkit-autofill]:[-webkit-text-fill-color:#e2e8f0]"
+            />
         </div>
 
         <button
