@@ -135,7 +135,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-20 relative px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto min-h-screen flex justify-center flex-col"
+      className="py-20 relative px-4 sm:px-6 lg:px-8 max-w-[1100px] mx-auto min-h-screen flex justify-center flex-col"
     >
       <div className="text-center mb-10">
         <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
