@@ -11,7 +11,7 @@ const Skills = () => {
 
   return (
     <section className="text-white flex flex-col lg:flex-row justify-between items-start max-w-7xl mx-auto w-full gap-8 lg:gap-12 px-6 lg:px-8 py-8 md:py-12 min-h-[calc(100vh-4.5rem)]">
-      <div className="flex flex-col w-full lg:w-[380px] xl:w-[400px] shrink-0 gap-6 lg:sticky lg:top-24 self-start">
+      <div className="flex flex-col w-full lg:w-[340px] xl:w-[360px] shrink-0 gap-6 lg:sticky lg:top-24 self-start">
         <div className="flex flex-col gap-4">
           <span className="inline-flex w-fit px-2.5 py-1 rounded-full bg-blue-600/10 border border-blue-500/20 text-xs font-bold uppercase tracking-widest text-blue-400">
             {t("skills.tagline")}
