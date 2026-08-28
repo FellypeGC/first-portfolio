@@ -20,7 +20,7 @@ function App() {
         <Outlet /> {/*Renders the matched child route component (e.g., Home, Projects, NotFound) */}
       </main>
       <Footer />
-    // </>
+    </>
   )
 }
 
