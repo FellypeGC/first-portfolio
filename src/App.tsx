@@ -13,14 +13,14 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#0A0B10]">
+    <>
       <Header />
       <ScrollToTop />
       <main className="flex-1 flex flex-col">
         <Outlet /> {/*Renders the matched child route component (e.g., Home, Projects, NotFound) */}
       </main>
       <Footer />
-    </div>
+    // </>
   )
 }
 
