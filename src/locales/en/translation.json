@@ -8,14 +8,14 @@
   },
   "home": {
     "roleTitle": "Software",
-    "roleHighlight": "Developer",
-    "bio": "Hello, World! I'm a Software Developer focused on turning ideas into reality by building reliable, scalable, and custom-made applications with AI-powered tools.",
+    "roleHighlight": "Engineer",
+    "bio": "Hello, World! I'm a Software Engineer focused on turning ideas into reality by building reliable, scalable, and custom-made applications with AI-powered tools.",
     "viewProjects": "View Projects",
     "githubProfile": "GitHub Profile"
   },
   "terminal": {
     "title": "Developer.ts — Visual Studio Code",
-    "role": "Software Developer",
+    "role": "Software Engineer",
     "status": "Building the future"
   },
   "skills": {
