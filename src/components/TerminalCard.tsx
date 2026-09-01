@@ -46,7 +46,7 @@ const TerminalCard = () => {
           </div>
           <div className="flex gap-4">
             <span className="text-slate-600 select-none">5</span>
-            <span>&nbsp;&nbsp;role: <span className="text-green">"Software Developer"</span>,
+            <span>&nbsp;&nbsp;role: <span className="text-green">"{t("terminal.role")}"</span>,
             </span>
           </div>
           <div className="flex gap-4">
