@@ -34,7 +34,7 @@ const TerminalCard = () => {
             <span>
               <span className="text-purple">const</span> {" "} 
               <span className="text-blue-400">Fellype</span>
-              <span>: Dev =</span> {" {"}
+              <span>: Developer =</span> {" {"}
               <span></span>
               <span className="text-green"></span>
             </span>
