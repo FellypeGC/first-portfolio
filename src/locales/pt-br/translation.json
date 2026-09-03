@@ -31,7 +31,7 @@
     "cards": {
       "fullstack": {
         "title": "Engenharia de Software Full-Stack",
-        "description": "Projetando e construindo soluções de software ponta a ponta combinando código limpo, interfaces frontend modernas e arquiteturas backend escaláveis."
+        "description": "Projetando e construindo soluções de software ponta a ponta combinando código limpo, padrões de projeto, interfaces frontend modernas e arquiteturas backend escaláveis."
       },
       "database": {
         "title": "Sistemas de Banco de Dados & Modelagem",

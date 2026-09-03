@@ -31,7 +31,7 @@
     "cards": {
       "fullstack": {
         "title": "Full-Stack Software Engineering",
-        "description": "Designing and building end-to-end software solutions by combining clean code, modern frontend interfaces, and scalable backend architectures."
+        "description": "Designing and building end-to-end software solutions by combining clean code, design patterns, modern frontend interfaces, and scalable backend architectures."
       },
       "database": {
         "title": "Database Systems & Data Modeling",
