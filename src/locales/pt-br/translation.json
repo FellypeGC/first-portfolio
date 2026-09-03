@@ -93,7 +93,7 @@
       "message": "Descrição do projeto/vaga..."
     },
     "verifyingDomain": "Verificando domínio...",
-    "button": "ENVIAR COMANDO",
+    "button": "ENVIAR E-MAIL",
     "sending": "ENVIANDO E-MAIL...",
     "success": "Seu e-mail foi enviado com sucesso. Retornarei em breve!",
     "errorDefault": "Falha ao enviar e-mail. Por favor, tente novamente.",

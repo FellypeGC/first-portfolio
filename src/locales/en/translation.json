@@ -93,8 +93,8 @@
       "message": "System/job description..."
     },
     "verifyingDomain": "Verifying domain...",
-    "button": "SEND COMMAND",
-    "sending": "SENDING EMAIL...",
+    "button": "SEND E-MAIL",
+    "sending": "SENDING E-MAIL...",
     "success": "Your email was sent successfully. I will get back to you soon!",
     "errorDefault": "Failed to send email. Please try again.",
     "errorFixEmail": "Please fix the email address before sending."

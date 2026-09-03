@@ -152,7 +152,7 @@ const Contact = () => {
       <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className="bg-[#161b22] border border-white/10 rounded-2xl p-6 sm:p-8 shadow-2xl flex flex-col gap-6"
+        className="bg-surface-elevated border border-white/10 rounded-2xl p-6 sm:p-8 shadow-2xl flex flex-col gap-6"
       >
         {/* Campo Honeypot Oculto (Anti-Spam Bot) */}
         <div className="hidden" aria-hidden="true">
