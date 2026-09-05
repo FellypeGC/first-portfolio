@@ -15,6 +15,15 @@ export const useProjectsData = (): Project[] => {
       githubUrl: "https://github.com/fggresuniaosepetiba/quinto-set",
     },
     {
+      id: "5",
+      title: "<ChronosPomodoro />",
+      description: t("projects.chronos.description"),
+      imageUrl: "/chronos-pomodoro.png",
+      tags: ["React 19", "TypeScript", "Vite", "React Router"],
+      demoUrl: "",
+      githubUrl: "https://github.com/FellypeGC/chronos-pomodoro",
+    },
+    {
       id: "1",
       title: "<HabitTrack />",
       description: t("projects.habitTrack.description"),

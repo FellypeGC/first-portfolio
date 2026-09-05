@@ -73,6 +73,9 @@
     },
     "overmatch": {
       "description": "Uma landing page institucional desenvolvida para um curso de inglês, contando com preview de cursos, estruturação de layout moderno e alta performance."
+    },
+    "chronos": {
+      "description": "Timer Pomodoro com React 19, TypeScript e Vite — ciclos de 25/5 foco/pausa, pausas longas, histórico de tarefas, temas e fluxo de áudio. Foco em gerenciamento de estado, timers e UX acessível."
     }
   },
   "contact": {

@@ -73,6 +73,9 @@
     },
     "overmatch": {
       "description": "An institutional landing page built for an English learning academy, featuring course previews, modern layout structuring, and fast performance."
+    },
+    "chronos": {
+      "description": "Pomodoro timer built with React 19, TypeScript and Vite — 25/5 focus/break cycles, long breaks, task history, themes and audio flow. Focused on state management, timers and accessible UX."
     }
   },
   "contact": {
