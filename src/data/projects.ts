@@ -20,7 +20,7 @@ export const useProjectsData = (): Project[] => {
       description: t("projects.chronos.description"),
       imageUrl: "/chronos-pomodoro.png",
       tags: ["React 19", "TypeScript", "Vite", "React Router"],
-      demoUrl: "",
+      demoUrl: "https://chronos-pomodoro-sigma-pied.vercel.app/",
       githubUrl: "https://github.com/FellypeGC/chronos-pomodoro",
     },
     {
