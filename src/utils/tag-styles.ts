@@ -22,7 +22,7 @@ const tagStyles: Record<string, string> = {
 
   // ─── Backend & Databases ────────────────────────────────────────────
   "NODE.JS": "bg-emerald-950/60 text-emerald-300 border-emerald-800/60",
-  EXPRESS: "bg-neutral-900 text-neutral-300 border-neutral-700",
+  EXPRESS: "bg-green-950/60 text-neutral-300 border-green-800/60",
   "REST APIS": "bg-lime-950/60 text-lime-300 border-lime-800/60",
   "REST API": "bg-lime-950/60 text-lime-300 border-lime-800/60",
   POSTGRESQL: "bg-sky-950/60 text-sky-300 border-sky-800/60",

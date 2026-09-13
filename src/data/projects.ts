@@ -10,7 +10,7 @@ export const useProjectsData = (): Project[] => {
       title: "<QuintoSet />",
       description: t("projects.quintoSet.description"),
       imageUrl: "/quinto-set.png",
-      tags: ["Next.js", "TypeScript", "PostgreSQL", "Tailwind CSS", "Drizzle ORM"],
+      tags: ["Next.js", "TypeScript", "Express", "PostgreSQL", "Tailwind CSS", "Drizzle ORM", "Jest"],
       demoUrl: "https://quintoset.vercel.app",
       githubUrl: "https://github.com/fggresuniaosepetiba/quinto-set",
     },
