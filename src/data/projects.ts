@@ -2,7 +2,10 @@ import { useTranslation } from "react-i18next";
 import type { Project } from "../models/project-model";
 
 export const useProjectsData = (): Project[] => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const chronosImageUrl = (i18n.resolvedLanguage || i18n.language || "en").startsWith("pt")
+    ? "/chronos-pomodoro.png"
+    : "/chronos-pomodoro-en.png";
 
   return [
     {
@@ -18,7 +21,7 @@ export const useProjectsData = (): Project[] => {
       id: "5",
       title: "<ChronosPomodoro />",
       description: t("projects.chronos.description"),
-      imageUrl: "/chronos-pomodoro.png",
+      imageUrl: chronosImageUrl,
       tags: ["React 19", "TypeScript", "Vite", "React Router"],
       demoUrl: "https://chronos-pomodoro-sigma-pied.vercel.app",
       githubUrl: "https://github.com/FellypeGC/chronos-pomodoro",
