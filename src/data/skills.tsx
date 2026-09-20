@@ -53,7 +53,7 @@ export const useTechCategories = (): TechCategory[] => {
         "Docker",
         "Figma",
         "Git/GitHub Actions",
-        "Vercel/Railway",
+        "Vercel/Render",
         "shadcn/ui",
       ],
     },
